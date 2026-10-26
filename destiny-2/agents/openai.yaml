@@ -1,0 +1,4 @@
+interface:
+  display_name: "Destiny 2"
+  short_description: "Historie, výzkum a matematické porovnání buildů"
+  default_prompt: "Použij $destiny-2 k dohledání ověřených dat a porovnání buildů pro zvolenou aktivitu a verzi hry."
