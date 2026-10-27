@@ -1,0 +1,21 @@
+# Pokrytí v0.2 — experimentální
+
+Audit dokončen 2026-10-27. Ověření je omezené na uvedený rozsah; nejde o potvrzení aktuálnosti celé databáze nebo hry.
+
+| Zdroj | Stav | Co bylo ověřeno | Omezení |
+|---|---|---|---|
+| [Destiny Science](https://www.destiny2.science/) | ověřeno v uvedeném rozsahu | Links resolved to named workbooks | Directory says 2025-07-29; not a date for every resource / not a calculator |
+| [Data Compendium](https://docs.google.com/spreadsheets/d/1WaxvbLx7UoSZaBqdFr1u32F2uWVLo-CJunJB4nlGUE4/edit?gid=1662574278) | částečně ověřeno | Weapon Perks rows 23:25; 22 visible tabs; OLD tabs kept separate | No row-level effective patch for sampled perks / not operated |
+| [Court stacking guide](https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587) | částečně ověřeno | Rows 99:132,158:174,202:214; standard buff/debuff/surge precedence | Author checked 9.7.0.3; data change 2026-06-09 / rules read, not game-tested |
+| [Damage Generator](https://docs.google.com/spreadsheets/d/1rY_iChu08CVnIMfHliZQwup10-GnmPtEu5FG0DNy8VM/edit) | historické nebo zastaralé | One adaptive Fusion row, stock modifier selection; no full weapon/catalyst coverage or custom script execution | v3.1 2024-11-09; author warns EoF retest pending; measured stale Radiant/Banner/Deadfall inputs / PASS phase 20->45, buff factor 1.625, reset baseline |
+| [Armor Stat Planner](https://docs.google.com/spreadsheets/d/1g5JSR7oa5P2DHwGDBALjQNWD5M8fwXwli_I5naAzSOQ/template/preview) | částečně ověřeno | Build Planner D14,F2,F4,M3,M10,M11; 6 stat sample points | MoT label; selected energy cap agrees with 9.7.0, no complete live-game validation / PASS mod swap Health25->35 and Grenade55->45, reset |
+| [Aegis Boss Damage](https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit) | částečně ověřeno | Home and Changelog; numerical rotations not revalidated | Changelog latest visible 2026-10-12; older tabs explicitly labeled / not operated |
+| [Aegis Endgame Analysis](https://docs.google.com/spreadsheets/d/1JM-0SlxVDAi-C6rGVlLxa-J1WGewEeL8Qvq4htWZHhY/edit) | částečně ověřeno | Status tab only; ratings are not DPS measurements | Mixed per-tab dates: Scouts 2026-10-12; Exotic Armor/Builds pre-TFS future / not a numeric test |
+| [Mossy reserves](https://docs.google.com/spreadsheets/d/1l3xBHFa6ZMe86e13segg8f-RB8vLNerYEgNC_Aq3kLc/edit) | nezpracované | 28 visible tabs; old/pre-TFS backups separated | EoF label; current per-weapon reserve numbers not audited / not operated |
+| [Mossy damage scaling](https://docs.google.com/spreadsheets/d/1b57Hb8m1L3daFfUckQQqvvN6VOpD03KEssvQLMFpC5I/edit) | historické nebo zastaralé | Introduction and tab names; no blind cross-era scaling | v1.9.2 EoF in progress; author warns much is outdated / not operated |
+| [WeaponStat Chart](https://docs.google.com/spreadsheets/d/1FWMC-Vd_bGEoRkkrn3drWIORCFYyWQVMNlMasa4OE6I/edit) | částečně ověřeno | Landing warning and 4 tabs; no current TTK certification | v2.1, prominent updating/inaccuracy warning / not operated |
+| [Ability Cooldowns and Factors](https://docs.google.com/spreadsheets/d/17lGgioS4E8l6w3-bJU8frTmzFzxl-3RDv1wm6gP7Dao/edit) | nezpracované | 7 tabs; useful for ability-specific chunk scalars; full extraction pending | Individual coefficients not checked / not operated |
+| [Exotic Class Item Planner](https://docs.google.com/spreadsheets/d/1gRfJIeC4-5mRv7dd5CWunVgUgpMV302UHw6zb5u7Uj0/template/preview) | historické nebo zastaralé | No extra copy created; not a current numerical source | Title explicitly Not Maintained / not operated |
+| [Prismatic Build Planner](https://docs.google.com/spreadsheets/d/1zKOc0WErE0jfoMwtxraPTqXEWfiOHkQP3popHPbIrw0/template/preview) | nedostupné | Do not bypass or invent replacement | unverifiable / not possible |
+| [Clarity](https://github.com/Database-Clarity/Live-Clarity-Database) | částečně ověřeno | Route only; credit Clarity and Discord feedback link required for future integration | Live database is versioned; update policy must be honored / no mirror or tooltip integration |
+| [Bungie patch audit](https://www.bungie.net/7/en/News/Article/destiny_2_update_9_7_0_6) | částečně ověřeno | Selected relative changes; no blanket latest-patch certification | 9.7.0, .1, .2, .5, .6 read; .3/.4 notes not retrieved / not applicable |

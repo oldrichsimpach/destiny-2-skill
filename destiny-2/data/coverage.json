@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "skill_version": "0.2",
+  "audited_at": "2026-10-27",
+  "labels": {
+    "verified_for_scope": "ověřeno v uvedeném rozsahu",
+    "partially_verified": "částečně ověřeno",
+    "historical_stale": "historické nebo zastaralé",
+    "inaccessible": "nedostupné",
+    "unprocessed": "nezpracované"
+  },
+  "records": [
+    {
+      "id": "directory",
+      "name": "Destiny Science",
+      "url": "https://www.destiny2.science/",
+      "status": "verified_for_scope",
+      "access": "public",
+      "calculation_test": "not a calculator",
+      "freshness": "Directory says 2025-07-29; not a date for every resource",
+      "checked_scope": "Links resolved to named workbooks",
+      "audited_at": "2026-10-27"
+    },
+    {
+      "id": "compendium",
+      "name": "Data Compendium",
+      "url": "https://docs.google.com/spreadsheets/d/1WaxvbLx7UoSZaBqdFr1u32F2uWVLo-CJunJB4nlGUE4/edit?gid=1662574278",
+      "status": "partially_verified",
+      "access": "viewer; owner security limitations; no export",
+      "calculation_test": "not operated",
+      "freshness": "No row-level effective patch for sampled perks",
+      "checked_scope": "Weapon Perks rows 23:25; 22 visible tabs; OLD tabs kept separate",
+      "audited_at": "2026-10-27"
+    },
+    {
+      "id": "court",
+      "name": "Court stacking guide",
+      "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+      "status": "partially_verified",
+      "access": "viewer; owner security limitations; no export",
+      "calculation_test": "rules read, not game-tested",
+      "freshness": "Author checked 9.7.0.3; data change 2026-06-09",
+      "checked_scope": "Rows 99:132,158:174,202:214; standard buff/debuff/surge precedence",
+      "audited_at": "2026-10-27"
+    },
+    {
+      "id": "generator",
+      "name": "Damage Generator",
+      "url": "https://docs.google.com/spreadsheets/d/1rY_iChu08CVnIMfHliZQwup10-GnmPtEu5FG0DNy8VM/edit",
+      "status": "historical_stale",
+      "access": "copy/download allowed; private copy tested",
+      "calculation_test": "PASS phase 20->45, buff factor 1.625, reset baseline",
+      "freshness": "v3.1 2024-11-09; author warns EoF retest pending; measured stale Radiant/Banner/Deadfall inputs",
+      "checked_scope": "One adaptive Fusion row, stock modifier selection; no full weapon/catalyst coverage or custom script execution",
+      "audited_at": "2026-10-27"
+    },
+    {
+      "id": "armor",
+      "name": "Armor Stat Planner",
+      "url": "https://docs.google.com/spreadsheets/d/1g5JSR7oa5P2DHwGDBALjQNWD5M8fwXwli_I5naAzSOQ/template/preview",
+      "status": "partially_verified",
+      "access": "template copy permitted; private copy tested",
+      "calculation_test": "PASS mod swap Health25->35 and Grenade55->45, reset",
+      "freshness": "MoT label; selected energy cap agrees with 9.7.0, no complete live-game validation",
+      "checked_scope": "Build Planner D14,F2,F4,M3,M10,M11; 6 stat sample points",
+      "audited_at": "2026-10-27"
+    },
+    {
+      "id": "boss",
+      "name": "Aegis Boss Damage",
+      "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+      "status": "partially_verified",
+      "access": "public viewer; author permits copying",
+      "calculation_test": "not operated",
+      "freshness": "Changelog latest visible 2026-10-12; older tabs explicitly labeled",
+      "checked_scope": "Home and Changelog; numerical rotations not revalidated",
+      "audited_at": "2026-10-27"
+    },
+    {
+      "id": "endgame",
+      "name": "Aegis Endgame Analysis",
+      "url": "https://docs.google.com/spreadsheets/d/1JM-0SlxVDAi-C6rGVlLxa-J1WGewEeL8Qvq4htWZHhY/edit",
+      "status": "partially_verified",
+      "access": "public web view",
+      "calculation_test": "not a numeric test",
+      "freshness": "Mixed per-tab dates: Scouts 2026-10-12; Exotic Armor/Builds pre-TFS future",
+      "checked_scope": "Status tab only; ratings are not DPS measurements",
+      "audited_at": "2026-10-27"
+    },
+    {
+      "id": "reserves",
+      "name": "Mossy reserves",
+      "url": "https://docs.google.com/spreadsheets/d/1l3xBHFa6ZMe86e13segg8f-RB8vLNerYEgNC_Aq3kLc/edit",
+      "status": "unprocessed",
+      "access": "public comment-only viewer",
+      "calculation_test": "not operated",
+      "freshness": "EoF label; current per-weapon reserve numbers not audited",
+      "checked_scope": "28 visible tabs; old/pre-TFS backups separated",
+      "audited_at": "2026-10-27"
+    },
+    {
+      "id": "scaling",
+      "name": "Mossy damage scaling",
+      "url": "https://docs.google.com/spreadsheets/d/1b57Hb8m1L3daFfUckQQqvvN6VOpD03KEssvQLMFpC5I/edit",
+      "status": "historical_stale",
+      "access": "public viewer",
+      "calculation_test": "not operated",
+      "freshness": "v1.9.2 EoF in progress; author warns much is outdated",
+      "checked_scope": "Introduction and tab names; no blind cross-era scaling",
+      "audited_at": "2026-10-27"
+    },
+    {
+      "id": "pvp",
+      "name": "WeaponStat Chart",
+      "url": "https://docs.google.com/spreadsheets/d/1FWMC-Vd_bGEoRkkrn3drWIORCFYyWQVMNlMasa4OE6I/edit",
+      "status": "partially_verified",
+      "access": "public comment-only viewer",
+      "calculation_test": "not operated",
+      "freshness": "v2.1, prominent updating/inaccuracy warning",
+      "checked_scope": "Landing warning and 4 tabs; no current TTK certification",
+      "audited_at": "2026-10-27"
+    },
+    {
+      "id": "flat",
+      "name": "Ability Cooldowns and Factors",
+      "url": "https://docs.google.com/spreadsheets/d/17lGgioS4E8l6w3-bJU8frTmzFzxl-3RDv1wm6gP7Dao/edit",
+      "status": "unprocessed",
+      "access": "public viewer; owner security limitations; no export",
+      "calculation_test": "not operated",
+      "freshness": "Individual coefficients not checked",
+      "checked_scope": "7 tabs; useful for ability-specific chunk scalars; full extraction pending",
+      "audited_at": "2026-10-27"
+    },
+    {
+      "id": "exotic",
+      "name": "Exotic Class Item Planner",
+      "url": "https://docs.google.com/spreadsheets/d/1gRfJIeC4-5mRv7dd5CWunVgUgpMV302UHw6zb5u7Uj0/template/preview",
+      "status": "historical_stale",
+      "access": "template preview",
+      "calculation_test": "not operated",
+      "freshness": "Title explicitly Not Maintained",
+      "checked_scope": "No extra copy created; not a current numerical source",
+      "audited_at": "2026-10-27"
+    },
+    {
+      "id": "prismatic",
+      "name": "Prismatic Build Planner",
+      "url": "https://docs.google.com/spreadsheets/d/1zKOc0WErE0jfoMwtxraPTqXEWfiOHkQP3popHPbIrw0/template/preview",
+      "status": "inaccessible",
+      "access": "Google says file deleted",
+      "calculation_test": "not possible",
+      "freshness": "unverifiable",
+      "checked_scope": "Do not bypass or invent replacement",
+      "audited_at": "2026-10-27"
+    },
+    {
+      "id": "clarity",
+      "name": "Clarity",
+      "url": "https://github.com/Database-Clarity/Live-Clarity-Database",
+      "status": "partially_verified",
+      "access": "public repository and usage requirements inspected",
+      "calculation_test": "no mirror or tooltip integration",
+      "freshness": "Live database is versioned; update policy must be honored",
+      "checked_scope": "Route only; credit Clarity and Discord feedback link required for future integration",
+      "audited_at": "2026-10-27"
+    },
+    {
+      "id": "patches",
+      "name": "Bungie patch audit",
+      "url": "https://www.bungie.net/7/en/News/Article/destiny_2_update_9_7_0_6",
+      "status": "partially_verified",
+      "access": "official patch pages",
+      "calculation_test": "not applicable",
+      "freshness": "9.7.0, .1, .2, .5, .6 read; .3/.4 notes not retrieved",
+      "checked_scope": "Selected relative changes; no blanket latest-patch certification",
+      "audited_at": "2026-10-27"
+    }
+  ]
+}

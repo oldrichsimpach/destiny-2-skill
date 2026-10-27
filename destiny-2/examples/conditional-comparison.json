@@ -1,0 +1,434 @@
+{
+  "sandbox": "9.7.0.3",
+  "mode": "PvE",
+  "target": "synthetic stationary target",
+  "damage_baseline": "100 / 140 arbitrary damage units; no measured weapon",
+  "baseline_sandbox": "9.7.0.3",
+  "baseline_kind": "synthetic",
+  "provenance": "Demonstration of setup-time ranking reversal; not a Destiny loadout measurement",
+  "windows_seconds": [
+    5,
+    10,
+    20,
+    25
+  ],
+  "allow_partial": true,
+  "builds": [
+    {
+      "name": "A immediate, Radiant + surge tier3",
+      "conditions": [
+        "All relevant triggers externally satisfied; synthetic shot schedule"
+      ],
+      "events": [
+        {
+          "time": 0,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 1,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 2,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 3,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 4,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 5,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 6,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 7,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 8,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 9,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 10,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 11,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 12,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 13,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 14,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 15,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 16,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 17,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 18,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 19,
+          "body": 100,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "radiant",
+            "surge-3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "B five-second setup, Well + surge tier3",
+      "conditions": [
+        "Synthetic weapon hits; 5-second setup; all shots within a full Well"
+      ],
+      "events": [
+        {
+          "time": 5,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 6,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 7,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 8,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 9,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 10,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 11,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 12,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 13,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 14,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 15,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 16,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 17,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 18,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 19,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 20,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 21,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 22,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 23,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        },
+        {
+          "time": 24,
+          "body": 140,
+          "component": "weapon",
+          "conditions_satisfied": true,
+          "effect_ids": [
+            "well",
+            "surge-3"
+          ]
+        }
+      ]
+    }
+  ]
+}

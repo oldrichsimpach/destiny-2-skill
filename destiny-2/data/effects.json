@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "skill_version": "0.2",
+  "audited_at": "2026-10-27",
+  "scope": "Bounded subset; weapon-only standard stacking, no complete build validation",
+  "records": [
+    {
+      "id": "radiant",
+      "name": "Radiant",
+      "stacking_group": "empowering",
+      "bonus": {
+        "PvE": 0.2,
+        "PvP": 0.1
+      },
+      "unit": "fractional weapon damage increase",
+      "source_id": "court",
+      "locator": "STACKING GUIDE!162:171",
+      "sandbox": "9.7.0.3",
+      "status": "partially_verified",
+      "audited_at": "2026-10-27",
+      "conditions": "Active Radiant. Duration and ally application depend on source; no Golden Gun modeling.",
+      "duration_seconds": null,
+      "limitations": "Read from community table; no independent in-game retest or complete 9.7.0.4 audit. Weapon components only."
+    },
+    {
+      "id": "well",
+      "name": "Well of Radiance",
+      "stacking_group": "empowering",
+      "bonus": {
+        "PvE": 0.25
+      },
+      "unit": "fractional weapon damage increase",
+      "source_id": "court",
+      "locator": "STACKING GUIDE!159:159",
+      "sandbox": "9.7.0.3",
+      "status": "partially_verified",
+      "audited_at": "2026-10-27",
+      "conditions": "Inside the Well; base duration 30s, stat scaling can change duration.",
+      "duration_seconds": 30,
+      "limitations": "Read from community table; no independent in-game retest or complete 9.7.0.4 audit. Weapon components only."
+    },
+    {
+      "id": "empowering-rift",
+      "name": "Empowering Rift",
+      "stacking_group": "empowering",
+      "bonus": {
+        "PvE": 0.2,
+        "PvP": 0.15
+      },
+      "unit": "fractional weapon damage increase",
+      "source_id": "court",
+      "locator": "STACKING GUIDE!160:160",
+      "sandbox": "9.7.0.3",
+      "status": "partially_verified",
+      "audited_at": "2026-10-27",
+      "conditions": "Inside Empowering Rift.",
+      "duration_seconds": 15,
+      "limitations": "Read from community table; no independent in-game retest or complete 9.7.0.4 audit. Weapon components only."
+    },
+    {
+      "id": "banner-shield",
+      "name": "Banner Shield",
+      "stacking_group": "empowering",
+      "bonus": {
+        "PvE": 0.25,
+        "PvP": 0.25
+      },
+      "unit": "fractional weapon damage increase",
+      "source_id": "court",
+      "locator": "STACKING GUIDE!158:158",
+      "sandbox": "9.7.0.3",
+      "status": "partially_verified",
+      "audited_at": "2026-10-27",
+      "conditions": "Shooter stands behind an ally guarding with Banner Shield. Guarding player cannot also fire; account for team opportunity cost.",
+      "duration_seconds": null,
+      "limitations": "Read from community table; no independent in-game retest or complete 9.7.0.4 audit. Weapon components only."
+    },
+    {
+      "id": "weapons-of-light",
+      "name": "Weapons of Light",
+      "stacking_group": "empowering",
+      "bonus": {
+        "PvE": 0.25,
+        "PvP": 0.25
+      },
+      "unit": "fractional weapon damage increase",
+      "source_id": "court",
+      "locator": "STACKING GUIDE!173:173",
+      "sandbox": "9.7.0.3",
+      "status": "partially_verified",
+      "audited_at": "2026-10-27",
+      "conditions": "Ward of Dawn buff; Helm of Saint-14 allows lingering after leaving dome.",
+      "duration_seconds": 15,
+      "limitations": "Read from community table; no independent in-game retest or complete 9.7.0.4 audit. Weapon components only."
+    },
+    {
+      "id": "lumina",
+      "name": "Lumina Blessing of the Sky",
+      "stacking_group": "empowering",
+      "bonus": {
+        "PvE": 0.35,
+        "PvP": 0.15
+      },
+      "unit": "fractional weapon damage increase",
+      "source_id": "court",
+      "locator": "STACKING GUIDE!174:174",
+      "sandbox": "9.7.0.3",
+      "status": "partially_verified",
+      "audited_at": "2026-10-27",
+      "conditions": "Shoot a Noble Round at an ally; benefits shooter and recipient.",
+      "duration_seconds": 11,
+      "limitations": "Read from community table; no independent in-game retest or complete 9.7.0.4 audit. Weapon components only."
+    },
+    {
+      "id": "deadfall",
+      "name": "Deadfall tether",
+      "stacking_group": "global_debuff",
+      "bonus": {
+        "PvE": 0.35,
+        "PvP": 0.5
+      },
+      "unit": "fractional weapon damage increase",
+      "source_id": "court",
+      "locator": "STACKING GUIDE!99:99",
+      "sandbox": "9.7.0.3",
+      "status": "partially_verified",
+      "audited_at": "2026-10-27",
+      "conditions": "Target affected by Deadfall. Duration variable; overrides weaker standard weaken; not refreshable by other weakens.",
+      "duration_seconds": null,
+      "limitations": "Read from community table; no independent in-game retest or complete 9.7.0.4 audit. Weapon components only."
+    },
+    {
+      "id": "moebius",
+      "name": "Moebius Quiver tether",
+      "stacking_group": "global_debuff",
+      "bonus": {
+        "PvE": 0.3,
+        "PvP": 0.5
+      },
+      "unit": "fractional weapon damage increase",
+      "source_id": "court",
+      "locator": "STACKING GUIDE!100:100",
+      "sandbox": "9.7.0.3",
+      "status": "partially_verified",
+      "audited_at": "2026-10-27",
+      "conditions": "Target affected by Moebius. Do not substitute Deadfall value.",
+      "duration_seconds": null,
+      "limitations": "Read from community table; no independent in-game retest or complete 9.7.0.4 audit. Weapon components only."
+    },
+    {
+      "id": "tractor",
+      "name": "Tractor Cannon",
+      "stacking_group": "global_debuff",
+      "bonus": {
+        "PvE": 0.3,
+        "PvP": 0.5
+      },
+      "unit": "fractional weapon damage increase",
+      "source_id": "court",
+      "locator": "STACKING GUIDE!103:103",
+      "sandbox": "9.7.0.3",
+      "status": "partially_verified",
+      "audited_at": "2026-10-27",
+      "conditions": "Target hit by Tractor Cannon; also suppression.",
+      "duration_seconds": 10,
+      "limitations": "Read from community table; no independent in-game retest or complete 9.7.0.4 audit. Weapon components only."
+    },
+    {
+      "id": "divinity",
+      "name": "Divinity",
+      "stacking_group": "global_debuff",
+      "bonus": {
+        "PvE": 0.15,
+        "PvP": 0.075
+      },
+      "unit": "fractional weapon damage increase",
+      "source_id": "court",
+      "locator": "STACKING GUIDE!106:106",
+      "sandbox": "9.7.0.3",
+      "status": "partially_verified",
+      "audited_at": "2026-10-27",
+      "conditions": "Sustained Divinity beam/cage. Precision behavior and Withering Distraction override are outside this helper.",
+      "duration_seconds": null,
+      "limitations": "Read from community table; no independent in-game retest or complete 9.7.0.4 audit. Weapon components only."
+    },
+    {
+      "id": "weaken",
+      "name": "Standard Void weaken",
+      "stacking_group": "global_debuff",
+      "bonus": {
+        "PvE": 0.15,
+        "PvP": 0.075
+      },
+      "unit": "fractional weapon damage increase",
+      "source_id": "court",
+      "locator": "STACKING GUIDE!108:132",
+      "sandbox": "9.7.0.3",
+      "status": "partially_verified",
+      "audited_at": "2026-10-27",
+      "conditions": "A verified standard weaken source affects the target; duration depends on source.",
+      "duration_seconds": null,
+      "limitations": "Read from community table; no independent in-game retest or complete 9.7.0.4 audit. Weapon components only."
+    },
+    {
+      "id": "surge-1",
+      "name": "Weapon surge tier 1",
+      "stacking_group": "weapon_surge",
+      "bonus": {
+        "PvE": 0.1,
+        "PvP": 0.03
+      },
+      "unit": "fractional weapon damage increase",
+      "source_id": "court",
+      "locator": "STACKING GUIDE!202:212",
+      "sandbox": "9.7.0.3",
+      "status": "partially_verified",
+      "audited_at": "2026-10-27",
+      "conditions": "1 matching-element surge tier while Armor Charge active. Same-element exotic/artifact/mod surges share highest-tier precedence; do not add tiers.",
+      "duration_seconds": null,
+      "limitations": "Read from community table; no independent in-game retest or complete 9.7.0.4 audit. Weapon components only."
+    },
+    {
+      "id": "surge-2",
+      "name": "Weapon surge tier 2",
+      "stacking_group": "weapon_surge",
+      "bonus": {
+        "PvE": 0.17,
+        "PvP": 0.044
+      },
+      "unit": "fractional weapon damage increase",
+      "source_id": "court",
+      "locator": "STACKING GUIDE!202:212",
+      "sandbox": "9.7.0.3",
+      "status": "partially_verified",
+      "audited_at": "2026-10-27",
+      "conditions": "2 matching-element surge tier while Armor Charge active. Same-element exotic/artifact/mod surges share highest-tier precedence; do not add tiers.",
+      "duration_seconds": null,
+      "limitations": "Read from community table; no independent in-game retest or complete 9.7.0.4 audit. Weapon components only."
+    },
+    {
+      "id": "surge-3",
+      "name": "Weapon surge tier 3",
+      "stacking_group": "weapon_surge",
+      "bonus": {
+        "PvE": 0.22,
+        "PvP": 0.055
+      },
+      "unit": "fractional weapon damage increase",
+      "source_id": "court",
+      "locator": "STACKING GUIDE!202:212",
+      "sandbox": "9.7.0.3",
+      "status": "partially_verified",
+      "audited_at": "2026-10-27",
+      "conditions": "3 matching-element surge tier while Armor Charge active. Same-element exotic/artifact/mod surges share highest-tier precedence; do not add tiers.",
+      "duration_seconds": null,
+      "limitations": "Read from community table; no independent in-game retest or complete 9.7.0.4 audit. Weapon components only."
+    },
+    {
+      "id": "surge-4",
+      "name": "Weapon surge tier 4 (Eternal Warrior example)",
+      "stacking_group": "weapon_surge",
+      "bonus": {
+        "PvE": 0.25,
+        "PvP": 0.06
+      },
+      "unit": "fractional weapon damage increase",
+      "source_id": "court",
+      "locator": "STACKING GUIDE!214:214",
+      "sandbox": "9.7.0.3",
+      "status": "partially_verified",
+      "audited_at": "2026-10-27",
+      "conditions": "Four-stack exotic matching-element surge; not four leg mods. Trigger and duration specific to source; Eternal Warrior grants it after Arc kills.",
+      "duration_seconds": null,
+      "limitations": "Read from community table; no independent in-game retest or complete 9.7.0.4 audit. Weapon components only."
+    }
+  ]
+}

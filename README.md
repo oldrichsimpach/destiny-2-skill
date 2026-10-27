@@ -1,66 +1,74 @@
-# Destiny 2 Skill — v0.1 EXPERIMENTAL
+# Destiny 2 Skill v0.2 — EXPERIMENTÁLNÍ
 
-> **První experimentální verze.** Projekt je v rané fázi a jeho pokrytí dat není kompletní. Výsledky závisí na dostupných zdrojích, jejich aktuálnosti a správně zadaných podmínkách. Verze 0.1 není hotová encyklopedie všech čísel ani automatický simulátor celé hry.
+**Druhá experimentální verze — Pre-release.** Skill pomáhá Codexu dohledávat Destiny 2 informace a sestavovat doložené matematické porovnání pro konkrétní sandbox, vybavení a aktivitu. Základem zůstává vydaná v0.1.
 
-## K čemu skill slouží
+## Co přibylo
 
-Skill rozšiřuje Codex o postupy a nástroje pro výzkum Destiny 2. Pomáhá dohledávat současné i historické informace, sestavovat buildy a porovnávat jejich výkon podle doložených hodnot a konkrétní aktivity. Je určen hráčům, kteří chtějí rozumět tomu, proč kombinace funguje, za jakých podmínek a kde přestává být výhodná.
+| Obsah | Rozsah |
+|---|---|
+| Buffy, debuffy a surgy | 15 vybraných záznamů s hodnotami, PvE/PvP rozlišením, kategorií stackování, aktivací a podmínkami. Ne všechny efekty mají změřené trvání. |
+| Další fakta | 24 záznamů: perk timing, konkrétní rozpory ve starém generátoru, oficiální změny a jejich podmínky. |
+| Statové vzorky | 102 záznamů pro šest statových hodnot: 0,50,70,100,150,200. Nejde o všechny křivky; null zůstává neznámé/nepoužitelné. |
+| Pokrytí zdrojů | 15 auditovaných položek, rozdělených na ověřené v daném rozsahu, částečné, zastaralé, nedostupné a nezpracované. |
+| Živé testy | Damage Generator a Armor Planner: baseline, změna relevantního vstupu, navazující přepočet a reset. |
+| Pomocné nástroje | Lokální vyhledávání dat, standardní stackování, porovnání explicitních damage událostí a read-only inspekce povolených XLSX exportů. |
 
-Odpovídá v jazyce uživatele a zachovává anglické názvy herních prvků pro snadné dohledání.
+`destiny-2/` je instalovatelný skill. Lokální pracovní podklady a původní exporty tabulek nejsou součástí repozitáře ani ZIPu. Balíček obsahuje skill, README, přehled pokrytí, testovací souhrn, VERSION a .gitignore.
 
-## Co verze 0.1 obsahuje
+## Co skill prakticky umí
 
-- `SKILL.md`: instrukce pro výzkum, rozlišení verzí hry, práci se zdroji a sestavování odpovědí.
-- `references/sources.md`: mapa zdrojů a pravidla pro ověřování předmětů, perk poolů, historických změn a důvěryhodnosti dat.
-- `references/modeling.md`: metodika výpočtů damage, DPS, PvP TTK, přežití, cooldownů, buffů a podmínek aktivace.
-- `references/activities.md`: postupy pro výzkum aktivit, encounterů, nepřátel, získávání odměn a secretů.
-- `references/data.md`: návod k použití lokální databáze a vysvětlení jejího pokrytí.
-- `scripts/manifest.py`: nástroj v Pythonu pro stažení veřejného anglického Bungie manifestu, uchovávání verzovaných SQLite snapshotů, hledání podle názvu a výpis definic podle hashe.
-- `agents/openai.yaml`: metadata pro zobrazení a vyvolání skillu v Codexu.
+- Vyhledat uložený efekt či statový vzorek a uvést zdroj, jednotku, podmínky a omezení.
+- Pro podporované standardní efekty spočítat nejvyšší empowerment/debuff/same-element surge v každé kategorii a součin mezi kategoriemi.
+- Rozlišit Radiant od Well, Deadfall od Moebius a nepřičítat jednotlivé úrovně surge k sobě.
+- Spočítat damage a DPS ze zadaného časového rozvrhu zásahů s přesností a poměrem crit/body, včetně podmíněně aktivních efektů.
+- Posoudit, zda se pořadí variant mění podle délky fáze a setupu. Demonstrační scénář používá syntetické jednotky a není doporučením konkrétní zbraně.
+- Vypočítat EHP pro explicitně nezávislé DR faktory stejného typu a stavu.
+- Zkontrolovat exportované tabulky: skryté listy, dropdowny, vzorce, cached hodnoty, chyby a neportabilní Google funkce.
+- Používat původní nástroj v0.1 pro veřejný Bungie manifest; stávající velká databáze zůstává mimo balíček.
 
-## Co s ním lze dělat
+## Doložené výsledky výzkumu
 
-Prostřednictvím Codexu a dostupných výzkumných nástrojů skill pomáhá:
+Ve starém Damage Generatoru je Radiant 25 %, generic Tether 30 % a Banner Shield 40 %. Novější Courtův přehled uvádí pro kontrolovaný sandbox Radiant 20 %, Deadfall 35 % a Banner Shield 25 %. Záznamy zůstávají oddělené. Generátor lze ovládat a jeho vzorce se přepočítávají, ale tím se jeho staré koeficienty nestávají současnými.
 
-- Dohledávat zbraně, armory, perky, traity, katalyzátory, schopnosti, aspekty, fragmenty a modifikace.
-- Ověřovat konkrétní verze předmětů a legální kombinace perků. Stejnojmenné reissue nemusí mít stejný perk pool.
-- Rozlišovat historický výkon předmětu od jeho fungování v dnešním sandboxu.
-- Navrhovat buildy pro konkrétní class, aktivitu, encounter a dostupné vybavení.
-- Připravovat doložené výpočty a srovnání damage za společné časové okno, spotřeby munice, přežití a schopností.
-- Zohledňovat stackování buffů a debuffů, aktivaci perků, přesnost, pohyb cíle, reloady a další podmínky, pokud jsou příslušná pravidla ověřena.
-- Dohledávat mechaniky aktivit, výskyt nepřátel, získávání vybavení, exotické mise a potvrzené secrety.
-- Uvádět zdroje, předpoklady a mezery v datech. Pokud chybí měření, má nabídnout podmíněný nebo symbolický výpočet místo vymyšlených čísel.
+Courtův přehled sám deklaruje kontrolu proti 9.7.0.3. Nepodařilo se načíst úplné poznámky .3/.4; jejich obsah proto netvrdíme jako ověřený. Hodnoty Courtova subsetu jsou označené jako **částečně ověřené a uzamčené na 9.7.0.3**. Pomocný nástroj odmítne jejich tiché použití jako 9.7.0.6. Nejde o plošné potvrzení dnešního sandboxu.
 
-## Co zatím chybí
+Exotic Class Item Planner je označený jako neudržovaný, Prismatic Planner vrací smazaný soubor, PvP Chart varuje před nepřesnostmi při aktualizaci a Mossyho scaling sheet před zastaralou částí obsahu. Celý [přehled pokrytí](COVERAGE.md) rozlišuje konkrétní ověřený rozsah.
 
-- Kompletní předem naplněná databáze všech buffů, debuffů, jejich hodnot, trvání, výjimek a vzájemného stackování.
-- Úplné tabulky statových křivek, skrytých koeficientů, interních cooldownů a energetických návratů pro všechny verze hry.
-- Kompletní archiv všech historických perk poolů a mechanik přiřazených ke konkrétním patchům.
-- Hotový automatický simulátor rotací a optimalizátor všech možných buildů.
-- Úplné ověření každé aktivity, nepřítele, odměny a secretu napříč historií.
+## Použití
 
-Bungie manifest obsahuje definice a vztahy mezi herními prvky. Sám o sobě neposkytuje všechna skrytá čísla, celou historii ani potvrzení, že je obsah právě dostupný. Výzkumné instrukce nejsou totéž co již zpracovaná a ověřená databáze těchto hodnot.
+Zkopíruj složku `destiny-2` do osobního adresáře Codex `skills`. Vyvolej ji jako `$destiny-2` a u porovnání zadej pokud možno class, aktivitu, encounter, časové okno a dostupné vybavení.
 
-## Instalace a použití
+Příklady:
 
-Zkopíruj složku `destiny-2` do osobního adresáře `skills` v Codexu. Skill vyvolej jako `$destiny-2`.
+> `$destiny-2 Ověř, jestli lze pro dnešní build použít hodnoty z Damage Generatoru. Uveď konkrétní rozpory a chybějící ověření.`
 
-Příklady zadání:
+> `$destiny-2 Porovnej dvě doložené rotace za 10 a 20 sekund. Zohledni setup, reloady, buff uptime a potřebné zásahy.`
 
-- `$destiny-2 Porovnej dva Hunter buildy pro solo dungeon. Dolož hodnoty, spočítej damage za 20 sekund a zohledni přežití i spolehlivost aktivace.`
-- `$destiny-2 Ověř, jaké perky může mít tato konkrétní verze zbraně a které lze kombinovat.`
-- `$destiny-2 Vysvětli stackování buffů v tomto buildu. Uveď patch, zdroje a co se zatím nepodařilo ověřit.`
-
-Pro stažení manifestu použij Python 3 a příkaz z kořenové složky repozitáře:
+Samostatné nástroje, spuštěné z adresáře `destiny-2`:
 
 ```sh
-python destiny-2/scripts/manifest.py sync --cache ./d2-cache
+python scripts/knowledge.py search Radiant
+python scripts/knowledge.py stat --value 100
+python scripts/knowledge.py stack --ids radiant well surge-3 tractor --mode PvE --sandbox 9.7.0.3 --allow-partial
+python scripts/compare.py examples/conditional-comparison.json
+python scripts/science_workbook.py permitted-export.xlsx --range 'Database!B4:C5' --source-url SOURCE_URL
 ```
 
-Nástroj vypíše cestu k vytvořené databázi. Příklady vyhledávání najdeš v `destiny-2/references/data.md`. Skript používá standardní knihovnu Pythonu; případný požadavek Bungie na API klíč řeší proměnná `BUNGIE_API_KEY`. Vygenerovaná databáze není součástí vydání. Nové snapshoty nevytvoří zpětně chybějící historická data.
+První čtyři příkazy používají standardní knihovnu Pythonu. Poslední potřebuje `openpyxl`. Příkaz stack je výslovně podmíněný výpočet částečně ověřeného historického subsetu, nikoli hotový současný build. Popis vstupního kontraktu najdeš v `destiny-2/references/calculations.md`.
 
-## Stav vydání
+## Testy a omezení
 
-**v0.1 — první experimentální vydání:** základ výzkumného skillu, metodika matematických porovnání a nástroj pro veřejný manifest. Pokrytí se má rozšiřovat podle doložených dat a praktického ověřování. Nejde o záruku optimálního buildu pro každou situaci.
+Skill prošel validátorem. Prošlo 12 funkčních testů pro stackování, PvE/PvP rozdíly, nesoulad sandboxů, neověřená data, reload/časové hranice, pravděpodobnosti, DR a skutečné přepočty a reset dvou tabulek. Nezávislá behaviorální kontrola ověřila, že ze zastaralého generátoru nevzniká deklarace aktuálního nejlepšího buildu. Podrobnosti jsou v [testovacím souhrnu](VALIDATION.md).
 
-Neoficiální komunitní projekt. Destiny 2 je majetkem Bungie. Odkazované komunitní zdroje patří jejich autorům.
+**Stále chybí** kompletní databáze všech efektů a historických patchů, všechny perk interakce, každá statová křivka a ability-specific chunk scalar, úplný solver legálních loadoutů, automatická simulace ability loopů a kompletně přetestované aktuální damage baselines pro všechny zbraně a encountery. Výpočetní nástroj zpracuje dodaná data; jejich pravdivost, legalitu a aktuálnost musí agent ověřit ze zdrojů.
+
+Veřejné originály nebyly upraveny. Dvě vytvořené pracovní kopie zůstávají soukromé a testované vstupy jsou resetované. Externí importy a Apps Script nebyly autorizovány ani spuštěny.
+
+## Zdroje
+
+Číselná komunitní data jsou výsledkem práce autorů, zejména [Courta](https://destiny2.science/court-sheet), [Destiny Data Compendia](https://destiny2.science/data-compendium) a [Engineeeera](https://destiny2.science/armor-stat-planner). Rozcestník: [Destiny Science](https://www.destiny2.science/). Každý uložený záznam obsahuje konkrétní source ID a locator; oficiální změny pocházejí od [Bungie](https://www.bungie.net/7/en/News).
+
+[Clarity](https://www.d2clarity.com/) je externí zdroj pro další výzkum; jeho databáze není v tomto balíčku zrcadlená. [Podmínky využití](https://www.d2clarity.com/partnerships), [zpětná vazba k tooltipům](https://d2clarity.com/discord).
+
+Neoficiální projekt. Destiny 2 a související herní obsah patří Bungie. Tento skill si nepřisvojuje autorství cizích měření ani práva k původním tabulkám.
+

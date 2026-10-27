@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "skill_version": "0.2",
+  "audited_at": "2026-10-27",
+  "records": [
+    {
+      "id": "court",
+      "author": "Court",
+      "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+      "scope": "STACKING GUIDE; last data change 2026-06-09; author checked 9.7.0.3 on 2026-07-07",
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "id": "compendium",
+      "author": "Destiny Data Compendium",
+      "url": "https://docs.google.com/spreadsheets/d/1WaxvbLx7UoSZaBqdFr1u32F2uWVLo-CJunJB4nlGUE4/edit?gid=1662574278",
+      "scope": "Weapon Perks rows 22:25; row-level effective patch unknown",
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "id": "armor",
+      "author": "Engineeeer",
+      "url": "https://docs.google.com/spreadsheets/d/1g5JSR7oa5P2DHwGDBALjQNWD5M8fwXwli_I5naAzSOQ/template/preview",
+      "scope": "Armor Stat Planner - MoT; exact author update date unknown",
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "id": "generator",
+      "author": "RokDC and Maeix",
+      "url": "https://docs.google.com/spreadsheets/d/1rY_iChu08CVnIMfHliZQwup10-GnmPtEu5FG0DNy8VM/edit",
+      "scope": "Information B5:B7,A28; v3.1, changelog 2024-11-09, retesting after Edge of Fate pending",
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "id": "patch970",
+      "author": "Bungie",
+      "url": "https://www.bungie.net/7/en/News/Article/destiny_update_9_7_0",
+      "scope": "9.7.0 effective 2026-06-09",
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "id": "patch9702",
+      "author": "Bungie",
+      "url": "https://origin-static01.bungie.net/7/en/News/Article/destiny_update_9_7_0_2",
+      "scope": "9.7.0.2 effective 2026-06-23",
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "id": "patch9705",
+      "author": "Bungie",
+      "url": "https://www.bungie.net/7/en/News/Article/destiny_2_update_9_7_0_5",
+      "scope": "9.7.0.5 effective 2026-10-07; backend fix",
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "id": "patch9706",
+      "author": "Bungie",
+      "url": "https://www.bungie.net/7/en/News/Article/destiny_2_update_9_7_0_6",
+      "scope": "9.7.0.6 effective 2026-10-20; Eververse fix",
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "id": "twid20250116",
+      "author": "Bungie",
+      "url": "https://www.bungie.net/7/en/News/Article/twid-01-16-25",
+      "scope": "Preview published 2025-01-16; not proof of deployment",
+      "accessed_at": "2026-10-27"
+    },
+    {
+      "id": "clarity",
+      "author": "Clarity",
+      "url": "https://www.d2clarity.com/partnerships",
+      "scope": "Usage/attribution requirements inspected; no database mirrored",
+      "accessed_at": "2026-10-27"
+    }
+  ]
+}
