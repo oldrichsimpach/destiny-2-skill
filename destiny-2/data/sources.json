@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "skill_version": "0.3-beta.1",
+  "skill_version": "0.4-beta.1",
   "audited_at": "2026-10-27",
   "records": [
     {
@@ -79,6 +79,27 @@
       "url": "https://www.d2clarity.com/partnerships",
       "scope": "Usage/attribution requirements inspected; no database mirrored",
       "accessed_at": "2026-10-27"
+    },
+    {
+      "id": "boss",
+      "author": "Aegis / @theaegisrelic",
+      "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+      "scope": "Boss Damage export; mixed per-row measurement patches, S29 rotations completed 2026-10-31",
+      "accessed_at": "2026-11-01"
+    },
+    {
+      "id": "reserves",
+      "author": "MossyMax",
+      "url": "https://docs.google.com/spreadsheets/d/1l3xBHFa6ZMe86e13segg8f-RB8vLNerYEgNC_Aq3kLc/edit",
+      "scope": "EoF Full Database and ammo brick models; per-record current patch not independently validated",
+      "accessed_at": "2026-11-01"
+    },
+    {
+      "id": "bungie-api",
+      "author": "Bungie",
+      "url": "https://bungie-net.github.io/multi/schema_Destiny-Definitions-DestinyItemSocketEntryDefinition.html",
+      "scope": "Manifest socket definition semantics; dynamic insertion and equipability separate",
+      "accessed_at": "2026-11-01"
     }
   ]
 }

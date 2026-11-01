@@ -1,41 +1,66 @@
-# Destiny 2 Skill 0.3-beta.1 — EXPERIMENTÁLNÍ BETA
+# Destiny 2 Skill 0.4-beta.1 — EXPERIMENTÁLNÍ BETA
 
-Skill pro Codex pomáhá dohledat Destiny 2 informace, sestavit legální build a porovnat varianty pro konkrétní patch, aktivitu a situaci. **Jde o průběžnou experimentální betu, nikoli kompletní encyklopedii nebo univerzální simulátor.**
+Skill pro výzkum Destiny 2, kontrolu vybavení a matematické porovnání buildů pro konkrétní patch a situaci. Nová beta implementuje všech šest navržených oblastí v níže uvedeném rozsahu. **Stále nejde o úplný simulátor hry ani plně ověřený solver všech legálních loadoutů.**
 
-Hlavním komunitním zdrojem pro pokryté endgame PvE oblasti je nyní [Aegis — Destiny 2: Endgame Analysis](https://docs.google.com/spreadsheets/d/1JM-0SlxVDAi-C6rGVlLxa-J1WGewEeL8Qvq4htWZHhY/edit?gid=1062099834#gid=1062099834). Bylo zpracováno všech 52 exportovaných listů včetně skrytých: struktura, vzorce, komentáře, metadata aktualizací, původ dat a omezení. Obsah nebyl plošně ověřen měřením ve hře. Datum stažení 2026-11-01 není datum platnosti každého čísla.
+## Co přibylo
 
-## Co přibylo a k čemu to je
+| Oblast | Implementace | Praktický výsledek |
+|---|---|---|
+| Evidence a rozpory | 82 záznamů s jednotkou, komponentou, patchem, podmínkami a původem. | Neznámý patch, rozporná varianta nebo nekompatibilní jednotka se nepoužije tiše ve výpočtu. |
+| Boss Damage a munice | Nová XLSX čtečka, přesné řádky s hlavičkami/vzorci/komentáři; index 6 026 řádkových lokací včetně variant. | Přístup k baseline hodnotám, týmovým rotacím, boss kontextu a konkrétní ammo economy. |
+| Kontrola kombinací | Přesný item hash, socket/pool, class, slot a equipping unique labels; volitelné auditované subclass/artifact/mod pravidlo. | Rozliší reedice zbraní a zachová neověřené serverové podmínky jako neznámé. |
+| Časová simulace | Charge/recovery, reloady, swapy, projektily/ticky, buff intervaly, procy a finite ammo/refilly. | Damage za konkrétní okno a okamžiky změny pořadí variant. |
+| Přežití a ability loopy | Typované příchozí útoky, DR skupiny, overshield vrstvy, healing; energie, cooldowny, CES/CMS a refundy. | Výkon lze porovnat spolu s přežitím a bilancí zdrojů. |
+| Změny zdrojů | Fingerprint buněk/vzorců/komentářů/formátování, manifest diff, review patchů a blokace zneplatněných claimů. | Změna podkladu označí závislé výpočty k revizi; nové koeficienty se automaticky neschvalují. |
 
-- Průvodce Aegis zdrojem a přehled všech listů s rozlišením historického, ignorovaného a hypotetického obsahu.
-- Čtečka originálního XLSX: vyhledávání zbraní/perků a dalších položek, podrobné vyhledání v obsahu, konkrétní řádky včetně hlaviček, vzorců a komentářů, kontrola zdroje pomocí SHA-256.
-- Offline index názvů a přesných řádků. Bez originálu nevrací vymyšlené hodnoty efektů.
-- Kontrola základních vztahů RPM a cyklického DPS vůči uloženým výsledkům; zvláštní případy a rozpory se hlásí. Čtečka nepřepočítává celý Excel.
-- Pravidla pro kombinování doporučení s ověřením legálních rollů, aktuálních Bungie změn a specializovaných pravidel stackování. Dva doporučené perk sloupce automaticky netvoří pár a S tier není společná jednotka napříč zbraněmi.
+Navíc: profily přesnosti, pohybu a doloženého range falloff; seeded Monte Carlo pro nelineární hit procy; konečné candidate-set/Pareto porovnání s volitelným omezením na přesné vlastněné instance. Utility a náboje různých typů se nesčítají do umělého univerzálního skóre.
 
-Zůstávají nástroje v0.2 pro manifest, 15 vybraných buffů/debuffů/surgů, 24 číselných faktů, 102 statových vzorků, podmíněné stackování, explicitní damage události a EHP. Jejich původní patchová omezení zůstávají platná. Nový sešit je automaticky nepřepisuje.
+## Ověřené příklady
+
+V syntetickém příkladu dá burst varianta za 10 sekund 600 jednotek, sustained varianta 720. Po přidání pohybového okna sustained klesne na 540 a pořadí se otočí. Na vzdálenějším profilu se změní podle zadaného falloff. Příchozí poškození zároveň ukončí další akce v okamžiku smrti; již vystřelené projektily mohou dopadnout.
+
+Ability příklad správně aplikuje grant `0,4 × 0,5 = 0,2` a zachová bilanci `počáteční energie + pasivní regen + granty − spotřeba = konečná energie`. První cast si nemůže zaplatit sám. **Tato čísla jsou demonstrační a nepředstavují konkrétní Destiny build.**
+
+Skutečný manifest rozlišil starší a novější Hezen Vengeance: příklad Cluster Bomb + Elemental Honing je strukturálně podporovaný pro novější hash `2265407516`, ne pro starší `4050645223` ve stejných socketech. Pozitivní výstup stále znamená pouze `structurally_compatible_runtime_unverified` pro uvedený manifest snapshot.
+
+## Zdroje a přesnost
+
+[Aegis Endgame Analysis](https://docs.google.com/spreadsheets/d/1JM-0SlxVDAi-C6rGVlLxa-J1WGewEeL8Qvq4htWZHhY/edit) zůstává hlavním komunitním zdrojem pro kontext endgame PvE voleb. [Aegis Boss Damage](https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit) doplňuje damage/rotace/bossy; Data Compendium mechaniky; Court stackování; Mossy munici; specializované statové zdroje ability loopy. Bungie a konkrétní verze itemů určují aplikovatelnost změn a pravidel.
+
+Zůstává audit všech 52 Endgame listů a jeho index. Nová evidence zahrnuje 47 porovnaných archetypových baseline hodnot; 46 odpovídalo zaokrouhlení. Precision Scout zůstává nevyřešený rozpor 75,298 vs 79,14239363. U Rewind Rounds se nejistota `1? s` nepřepisuje na potvrzenou sekundu. Courtův subset má nadále vlastní omezení na 9.7.0.3. U nových baseline hodnot se zachovávají patche jednotlivých zdrojových řádků.
 
 ## Instalace a použití
 
-Zkopíruj adresář `destiny-2` do svého osobního adresáře Codex `skills`. Vyvolej `$destiny-2`. Pro práci s XLSX je potřeba Python a `openpyxl`; index funguje se standardním Pythonem.
+Zkopíruj složku `destiny-2` do osobního adresáře Codex `skills`. Vyvolej `$destiny-2`. Nové matematické/manifest nástroje používají standardní Python; XLSX čtečky a fingerprinty potřebují `openpyxl`.
 
-Originální sešit není veřejně zrcadlen v repozitáři ani ZIPu: nebyla dohledána licence k šíření jeho plné kopie. V dokumentu zvol File → Download → Microsoft Excel, poté z adresáře skillu:
+Veřejný balíček obsahuje integraci, metadata, faktické subsety a indexy. Plné cizí sešity nejsou zrcadlené, protože nebyla doložena licence k jejich redistribuci. Stáhni originály přes povolené Download ovládání a importuj je. Místní instalace zadavatele obsahuje jeho povolené exporty Endgame, Boss Damage a reserves. Velký manifest zůstává samostatně mimo balíček.
+
+Z adresáře skillu:
 
 ```sh
-python scripts/aegis.py import /cesta/k/originalu.xlsx
-python scripts/aegis.py search "Cascade Point" --sheet Perks
-python scripts/aegis.py row --sheet Perks 19
-python scripts/aegis.py sheets
-python scripts/aegis.py math-check
+python scripts/evidence.py conflicts
+python scripts/workbooks.py boss import /cesta/boss-damage.xlsx
+python scripts/workbooks.py boss search "Hezen"
+python scripts/workbooks.py reserves import /cesta/reserves.xlsx
+python scripts/legality.py examples/manifest-roll-example.json --db /cesta/manifest.sqlite
+python scripts/simulate.py examples/encounter-demo.json --out comparison.json
+python scripts/simulate.py examples/stochastic-proc-demo.json --summary
+python scripts/optimize.py examples/encounter-demo.json --out frontier.json
 ```
 
-Místní instalace zadavatele obsahuje jeho staženou kopii. Veřejný balíček obsahuje vlastní integraci, metadata a index s odkazem na originál. Podrobnosti jsou v [průvodci](destiny-2/references/aegis.md) a [auditu listů](destiny-2/references/aegis-audit.md).
+Příklad požadavku: `$destiny-2 Porovnej doložené rotace pro 10s a 20s fázi. Ověř konkrétní verze zbraní, uveď neznámé podmínky, ukaž dopad horší přesnosti a pohybu a zachovej rozpory ve zdrojích.`
 
-Příklad: `$destiny-2 Najdi vhodné zbraně pro tento encounter, ověř konkrétní roll a porovnej je v 10s a 25s fázi. Odděl damage, přežití a utility; uveď patch, zdroje a chybějící měření.`
+Podrobné kontrakty: [simulace](destiny-2/references/simulation.md), [evidence a legalita](destiny-2/references/evidence-and-legality.md), [Boss Damage](destiny-2/references/boss-damage.md), [kontrola změn](destiny-2/references/updates.md).
 
-## Omezení a původ
+## Validace a hranice
 
-Chybí úplný historický archiv, všechna čísla a interakce, všechny legální loadouty a současné měřené baselines pro každý encounter. Zdrojové tier listy jsou autorská doporučení. Encounters není databáze HP bossů; ignorované armor/build listy nejsou dnešní doporučení. Živé změny vyžadují ověření. Import je ruční a změna souboru vyžaduje nový audit.
+Prošlo 64 funkčních testů a nezávislá behaviorální kontrola. Ověřeny byly také skutečné manifest pooly, čtení S29 Fireteam řádku včetně array formula a vytvoření fingerprintů originálních exportů. Podrobnosti: [VALIDATION.md](VALIDATION.md).
 
-[Changelog](CHANGELOG.md) · [Validace](VALIDATION.md) · [GitHub releases](https://github.com/oldrichsimpach/destiny-2-skill/releases)
+Výsledek může být syntetický, podmíněný nebo založený na scoped evidenci. Monte Carlo dává odhady a kvantily, nikoli přesnou pravděpodobnost. U ensemble výstupu jsou resource/effect traces výslovně z trialu 0. Unknown podmínky, engine frame pravidla, úplné cooldown/stat křivky, všechny perk interakce, nepopsané AI útoky, serverové equip restrikce a globální optimalizace všech buildů zůstávají mimo ověřený rozsah. Komunitní datum aktualizace nenahrazuje kontrolu patche nebo herní měření.
 
-Za zdrojový výzkum patří zásluhy Aegisovi, Destiny Data Compendiu, Courtovi a dalším autorům uvedeným u jednotlivých dat. Neoficiální projekt; Destiny 2 patří Bungie. Skill si nepřisvojuje původní tabulky ani měření.
+Čtečky originály nemění a výpočty nic ve hře nevybavují. Automatická invalidace sleduje claim reference; volně zadané číselné předpoklady vyžadují ruční revizi. Pravidelný monitor se konfiguruje místně a není součástí veřejného ZIPu jako samospouštěcí služba.
+
+[Changelog](CHANGELOG.md) · [Pokrytí](COVERAGE.md) · [Releases](https://github.com/oldrichsimpach/destiny-2-skill/releases)
+
+Zásluhy za původní výzkum patří Aegisovi, Courtovi, Destiny Data Compendiu, Mossymu, Engineeeerovi, Clarity a dalším uvedeným autorům. Neoficiální projekt; Destiny 2 patří Bungie.
+

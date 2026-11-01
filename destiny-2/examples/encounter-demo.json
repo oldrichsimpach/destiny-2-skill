@@ -1,0 +1,181 @@
+{
+  "sandbox": "synthetic-v1",
+  "mode": "PvE",
+  "target": {
+    "id": "synthetic target",
+    "distance_m": 10
+  },
+  "damage_unit": "synthetic_damage",
+  "baseline_kind": "synthetic",
+  "provenance": "Hand-authored demonstration; no Destiny weapon measurements",
+  "duration": 10,
+  "windows_seconds": [
+    1,
+    3,
+    6,
+    10
+  ],
+  "profiles": [
+    {
+      "id": "ideal"
+    },
+    {
+      "id": "movement",
+      "movement_windows": [
+        [
+          3,
+          5
+        ]
+      ]
+    },
+    {
+      "id": "far",
+      "distance_m": 30
+    }
+  ],
+  "builds": [
+    {
+      "name": "Burst / fragile",
+      "initial_weapon": "burst",
+      "weapons": [
+        {
+          "id": "burst",
+          "ammo": 2,
+          "magazine": 2,
+          "recovery_seconds": 0.5,
+          "components": [
+            {
+              "id": "impact",
+              "kind": "weapon_combined",
+              "body": 300,
+              "falloff_points": [
+                [
+                  10,
+                  1
+                ],
+                [
+                  30,
+                  0.5
+                ]
+              ],
+              "falloff_interpolation": "linear"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "fire",
+          "weapon": "burst",
+          "count": 2
+        }
+      ],
+      "survival": {
+        "max_hp": 200,
+        "events": [
+          {
+            "time": 2,
+            "kind": "incoming",
+            "amount": 120,
+            "damage_type": "solar"
+          },
+          {
+            "time": 4,
+            "kind": "incoming",
+            "amount": 120,
+            "damage_type": "solar"
+          },
+          {
+            "time": 6,
+            "kind": "incoming",
+            "amount": 120,
+            "damage_type": "solar"
+          },
+          {
+            "time": 8,
+            "kind": "incoming",
+            "amount": 120,
+            "damage_type": "solar"
+          }
+        ]
+      },
+      "utility": [
+        "short scripted burst; no modeled support utility"
+      ]
+    },
+    {
+      "name": "Sustained / resistant",
+      "initial_weapon": "sustain",
+      "weapons": [
+        {
+          "id": "sustain",
+          "ammo": 10,
+          "magazine": 10,
+          "recovery_seconds": 1,
+          "components": [
+            {
+              "id": "impact",
+              "kind": "weapon_combined",
+              "body": 90
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "fire",
+          "weapon": "sustain",
+          "count": 10
+        }
+      ],
+      "survival": {
+        "max_hp": 200,
+        "resistances": [
+          {
+            "id": "typed DR",
+            "fraction": 0.3,
+            "independence_group": "armor",
+            "damage_types": [
+              "solar"
+            ],
+            "end": 10
+          }
+        ],
+        "events": [
+          {
+            "time": 2,
+            "kind": "incoming",
+            "amount": 120,
+            "damage_type": "solar"
+          },
+          {
+            "time": 3,
+            "kind": "heal",
+            "amount": 100
+          },
+          {
+            "time": 4,
+            "kind": "incoming",
+            "amount": 120,
+            "damage_type": "solar"
+          },
+          {
+            "time": 6,
+            "kind": "incoming",
+            "amount": 120,
+            "damage_type": "solar"
+          },
+          {
+            "time": 8,
+            "kind": "incoming",
+            "amount": 120,
+            "damage_type": "solar"
+          }
+        ]
+      },
+      "utility": [
+        "scripted heal and typed DR, both synthetic inputs"
+      ]
+    }
+  ]
+}

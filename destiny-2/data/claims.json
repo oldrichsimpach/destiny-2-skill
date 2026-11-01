@@ -1,0 +1,3031 @@
+{
+  "schema_version": 1,
+  "skill_version": "0.4-beta.1",
+  "audited_at": "2026-11-01",
+  "scope": "Bounded source observations with strict patch/unit/component gates; not all Destiny mechanics.",
+  "records": [
+    {
+      "id": "court-radiant-pve",
+      "entity": "Radiant",
+      "field": "weapon damage multiplier",
+      "value": 1.2,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "radiant conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!162:171",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Active Radiant. Duration and ally application depend on source; no Golden Gun modeling.",
+      "stacking_group": "empowering"
+    },
+    {
+      "id": "court-radiant-pvp",
+      "entity": "Radiant",
+      "field": "weapon damage multiplier",
+      "value": 1.1,
+      "unit": "factor",
+      "mode": "PvP",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "radiant conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!162:171",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Active Radiant. Duration and ally application depend on source; no Golden Gun modeling.",
+      "stacking_group": "empowering"
+    },
+    {
+      "id": "court-well-pve",
+      "entity": "Well of Radiance",
+      "field": "weapon damage multiplier",
+      "value": 1.25,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "well conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!159:159",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Inside the Well; base duration 30s, stat scaling can change duration.",
+      "stacking_group": "empowering"
+    },
+    {
+      "id": "court-empowering-rift-pve",
+      "entity": "Empowering Rift",
+      "field": "weapon damage multiplier",
+      "value": 1.2,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "empowering-rift conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!160:160",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Inside Empowering Rift.",
+      "stacking_group": "empowering"
+    },
+    {
+      "id": "court-empowering-rift-pvp",
+      "entity": "Empowering Rift",
+      "field": "weapon damage multiplier",
+      "value": 1.15,
+      "unit": "factor",
+      "mode": "PvP",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "empowering-rift conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!160:160",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Inside Empowering Rift.",
+      "stacking_group": "empowering"
+    },
+    {
+      "id": "court-banner-shield-pve",
+      "entity": "Banner Shield",
+      "field": "weapon damage multiplier",
+      "value": 1.25,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "banner-shield conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!158:158",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Shooter stands behind an ally guarding with Banner Shield. Guarding player cannot also fire; account for team opportunity cost.",
+      "stacking_group": "empowering"
+    },
+    {
+      "id": "court-banner-shield-pvp",
+      "entity": "Banner Shield",
+      "field": "weapon damage multiplier",
+      "value": 1.25,
+      "unit": "factor",
+      "mode": "PvP",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "banner-shield conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!158:158",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Shooter stands behind an ally guarding with Banner Shield. Guarding player cannot also fire; account for team opportunity cost.",
+      "stacking_group": "empowering"
+    },
+    {
+      "id": "court-weapons-of-light-pve",
+      "entity": "Weapons of Light",
+      "field": "weapon damage multiplier",
+      "value": 1.25,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "weapons-of-light conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!173:173",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Ward of Dawn buff; Helm of Saint-14 allows lingering after leaving dome.",
+      "stacking_group": "empowering"
+    },
+    {
+      "id": "court-weapons-of-light-pvp",
+      "entity": "Weapons of Light",
+      "field": "weapon damage multiplier",
+      "value": 1.25,
+      "unit": "factor",
+      "mode": "PvP",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "weapons-of-light conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!173:173",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Ward of Dawn buff; Helm of Saint-14 allows lingering after leaving dome.",
+      "stacking_group": "empowering"
+    },
+    {
+      "id": "court-lumina-pve",
+      "entity": "Lumina Blessing of the Sky",
+      "field": "weapon damage multiplier",
+      "value": 1.35,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "lumina conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!174:174",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Shoot a Noble Round at an ally; benefits shooter and recipient.",
+      "stacking_group": "empowering"
+    },
+    {
+      "id": "court-lumina-pvp",
+      "entity": "Lumina Blessing of the Sky",
+      "field": "weapon damage multiplier",
+      "value": 1.15,
+      "unit": "factor",
+      "mode": "PvP",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "lumina conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!174:174",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Shoot a Noble Round at an ally; benefits shooter and recipient.",
+      "stacking_group": "empowering"
+    },
+    {
+      "id": "court-deadfall-pve",
+      "entity": "Deadfall tether",
+      "field": "weapon damage multiplier",
+      "value": 1.35,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "deadfall conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!99:99",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Target affected by Deadfall. Duration variable; overrides weaker standard weaken; not refreshable by other weakens.",
+      "stacking_group": "global_debuff"
+    },
+    {
+      "id": "court-deadfall-pvp",
+      "entity": "Deadfall tether",
+      "field": "weapon damage multiplier",
+      "value": 1.5,
+      "unit": "factor",
+      "mode": "PvP",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "deadfall conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!99:99",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Target affected by Deadfall. Duration variable; overrides weaker standard weaken; not refreshable by other weakens.",
+      "stacking_group": "global_debuff"
+    },
+    {
+      "id": "court-moebius-pve",
+      "entity": "Moebius Quiver tether",
+      "field": "weapon damage multiplier",
+      "value": 1.3,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "moebius conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!100:100",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Target affected by Moebius. Do not substitute Deadfall value.",
+      "stacking_group": "global_debuff"
+    },
+    {
+      "id": "court-moebius-pvp",
+      "entity": "Moebius Quiver tether",
+      "field": "weapon damage multiplier",
+      "value": 1.5,
+      "unit": "factor",
+      "mode": "PvP",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "moebius conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!100:100",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Target affected by Moebius. Do not substitute Deadfall value.",
+      "stacking_group": "global_debuff"
+    },
+    {
+      "id": "court-tractor-pve",
+      "entity": "Tractor Cannon",
+      "field": "weapon damage multiplier",
+      "value": 1.3,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "tractor conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!103:103",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Target hit by Tractor Cannon; also suppression.",
+      "stacking_group": "global_debuff"
+    },
+    {
+      "id": "court-tractor-pvp",
+      "entity": "Tractor Cannon",
+      "field": "weapon damage multiplier",
+      "value": 1.5,
+      "unit": "factor",
+      "mode": "PvP",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "tractor conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!103:103",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Target hit by Tractor Cannon; also suppression.",
+      "stacking_group": "global_debuff"
+    },
+    {
+      "id": "court-divinity-pve",
+      "entity": "Divinity",
+      "field": "weapon damage multiplier",
+      "value": 1.15,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "divinity conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!106:106",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Sustained Divinity beam/cage. Precision behavior and Withering Distraction override are outside this helper.",
+      "stacking_group": "global_debuff"
+    },
+    {
+      "id": "court-divinity-pvp",
+      "entity": "Divinity",
+      "field": "weapon damage multiplier",
+      "value": 1.075,
+      "unit": "factor",
+      "mode": "PvP",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "divinity conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!106:106",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Sustained Divinity beam/cage. Precision behavior and Withering Distraction override are outside this helper.",
+      "stacking_group": "global_debuff"
+    },
+    {
+      "id": "court-weaken-pve",
+      "entity": "Standard Void weaken",
+      "field": "weapon damage multiplier",
+      "value": 1.15,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "weaken conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!108:132",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "A verified standard weaken source affects the target; duration depends on source.",
+      "stacking_group": "global_debuff"
+    },
+    {
+      "id": "court-weaken-pvp",
+      "entity": "Standard Void weaken",
+      "field": "weapon damage multiplier",
+      "value": 1.075,
+      "unit": "factor",
+      "mode": "PvP",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "weaken conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!108:132",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "A verified standard weaken source affects the target; duration depends on source.",
+      "stacking_group": "global_debuff"
+    },
+    {
+      "id": "court-surge-1-pve",
+      "entity": "Weapon surge tier 1",
+      "field": "weapon damage multiplier",
+      "value": 1.1,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "surge-1 conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!202:212",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "1 matching-element surge tier while Armor Charge active. Same-element exotic/artifact/mod surges share highest-tier precedence; do not add tiers.",
+      "stacking_group": "weapon_surge"
+    },
+    {
+      "id": "court-surge-1-pvp",
+      "entity": "Weapon surge tier 1",
+      "field": "weapon damage multiplier",
+      "value": 1.03,
+      "unit": "factor",
+      "mode": "PvP",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "surge-1 conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!202:212",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "1 matching-element surge tier while Armor Charge active. Same-element exotic/artifact/mod surges share highest-tier precedence; do not add tiers.",
+      "stacking_group": "weapon_surge"
+    },
+    {
+      "id": "court-surge-2-pve",
+      "entity": "Weapon surge tier 2",
+      "field": "weapon damage multiplier",
+      "value": 1.17,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "surge-2 conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!202:212",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "2 matching-element surge tier while Armor Charge active. Same-element exotic/artifact/mod surges share highest-tier precedence; do not add tiers.",
+      "stacking_group": "weapon_surge"
+    },
+    {
+      "id": "court-surge-2-pvp",
+      "entity": "Weapon surge tier 2",
+      "field": "weapon damage multiplier",
+      "value": 1.044,
+      "unit": "factor",
+      "mode": "PvP",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "surge-2 conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!202:212",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "2 matching-element surge tier while Armor Charge active. Same-element exotic/artifact/mod surges share highest-tier precedence; do not add tiers.",
+      "stacking_group": "weapon_surge"
+    },
+    {
+      "id": "court-surge-3-pve",
+      "entity": "Weapon surge tier 3",
+      "field": "weapon damage multiplier",
+      "value": 1.22,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "surge-3 conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!202:212",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "3 matching-element surge tier while Armor Charge active. Same-element exotic/artifact/mod surges share highest-tier precedence; do not add tiers.",
+      "stacking_group": "weapon_surge"
+    },
+    {
+      "id": "court-surge-3-pvp",
+      "entity": "Weapon surge tier 3",
+      "field": "weapon damage multiplier",
+      "value": 1.055,
+      "unit": "factor",
+      "mode": "PvP",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "surge-3 conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!202:212",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "3 matching-element surge tier while Armor Charge active. Same-element exotic/artifact/mod surges share highest-tier precedence; do not add tiers.",
+      "stacking_group": "weapon_surge"
+    },
+    {
+      "id": "court-surge-4-pve",
+      "entity": "Weapon surge tier 4 (Eternal Warrior example)",
+      "field": "weapon damage multiplier",
+      "value": 1.25,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "surge-4 conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!214:214",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Four-stack exotic matching-element surge; not four leg mods. Trigger and duration specific to source; Eternal Warrior grants it after Arc kills.",
+      "stacking_group": "weapon_surge"
+    },
+    {
+      "id": "court-surge-4-pvp",
+      "entity": "Weapon surge tier 4 (Eternal Warrior example)",
+      "field": "weapon damage multiplier",
+      "value": 1.06,
+      "unit": "factor",
+      "mode": "PvP",
+      "components": [
+        "weapon_impact",
+        "weapon_explosion",
+        "weapon_combined"
+      ],
+      "status": "partially_verified",
+      "applies_to": [
+        "9.7.0.3"
+      ],
+      "conditions": [
+        "surge-4 conditions verified"
+      ],
+      "provenance": {
+        "source_id": "court",
+        "url": "https://docs.google.com/spreadsheets/d/1i1KUwgVkd8qhwYj481gkV9sZNJQCE-C3Q-dpQutPCi4/edit?gid=2073397587",
+        "locator": "STACKING GUIDE!214:214",
+        "retrieved_at": "2026-10-27"
+      },
+      "independence_group": "court",
+      "notes": "Four-stack exotic matching-element surge; not four leg mods. Trigger and duration specific to source; Eternal Warrior grants it after Arc kills.",
+      "stacking_group": "weapon_surge"
+    },
+    {
+      "id": "boss-normalized-3",
+      "entity": "Auto rifle / Adaptive",
+      "field": "normalized damage per archetype unit",
+      "value": 27.57389929,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L3",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A3:X3"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Auto rifle",
+        "Auto rifles",
+        "Adaptive Auto rifle",
+        "Adaptive Auto rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-11",
+      "entity": "Auto rifle / High-Impact",
+      "field": "normalized damage per archetype unit",
+      "value": 41.49341576,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L11",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A11:X11"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Auto rifle",
+        "Auto rifles",
+        "High-Impact Auto rifle",
+        "High-Impact Auto rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-19",
+      "entity": "Auto rifle / Support",
+      "field": "normalized damage per archetype unit",
+      "value": 26.77849835,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L19",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A19:X19"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Auto rifle",
+        "Auto rifles",
+        "Support Auto rifle",
+        "Support Auto rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-15",
+      "entity": "Auto rifle / Precision",
+      "field": "normalized damage per archetype unit",
+      "value": 34.33480729,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L15",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A15:X15"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Auto rifle",
+        "Auto rifles",
+        "Precision Auto rifle",
+        "Precision Auto rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-18",
+      "entity": "Auto rifle / Rapid-Fire",
+      "field": "normalized damage per archetype unit",
+      "value": 23.39804435,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L18",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A18:X18"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Auto rifle",
+        "Auto rifles",
+        "Rapid-Fire Auto rifle",
+        "Rapid-Fire Auto rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-39",
+      "entity": "Bow / Precision",
+      "field": "normalized damage per archetype unit",
+      "value": 213.8374291,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0.2"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L39",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A39:X39"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Bow",
+        "Bows",
+        "Precision Bow",
+        "Precision Bows"
+      ]
+    },
+    {
+      "id": "boss-normalized-38",
+      "entity": "Bow / Lightweight",
+      "field": "normalized damage per archetype unit",
+      "value": 208.6956522,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0.2"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L38",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A38:X38"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Bow",
+        "Bows",
+        "Lightweight Bow",
+        "Lightweight Bows"
+      ]
+    },
+    {
+      "id": "boss-normalized-35",
+      "entity": "Bow / High-Impact Longbow",
+      "field": "normalized damage per archetype unit",
+      "value": 256.4839319,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0.2"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L35",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A35:X35"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Bow",
+        "Bows",
+        "High-Impact Longbow Bow",
+        "High-Impact Longbow Bows"
+      ]
+    },
+    {
+      "id": "boss-normalized-136",
+      "entity": "Hand cannon / Precision",
+      "field": "normalized damage per archetype unit",
+      "value": 85.10790069,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L136",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A136:X136"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Hand cannon",
+        "Hand cannons",
+        "Precision Hand cannon",
+        "Precision Hand cannons"
+      ]
+    },
+    {
+      "id": "boss-normalized-139",
+      "entity": "Hand cannon / Spread Shot",
+      "field": "normalized damage per archetype unit",
+      "value": 200.5293006,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0.2"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L139",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A139:X139"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Hand cannon",
+        "Hand cannons",
+        "Spread Shot Hand cannon",
+        "Spread Shot Hand cannons"
+      ]
+    },
+    {
+      "id": "boss-normalized-113",
+      "entity": "Hand cannon / Adaptive",
+      "field": "normalized damage per archetype unit",
+      "value": 96.24351386,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L113",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A113:X113"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Hand cannon",
+        "Hand cannons",
+        "Adaptive Hand cannon",
+        "Adaptive Hand cannons"
+      ]
+    },
+    {
+      "id": "boss-normalized-129",
+      "entity": "Hand cannon / Heavy Burst",
+      "field": "normalized damage per archetype unit",
+      "value": 63.6983587,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L129",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A129:X129"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 2,
+      "aliases": [
+        "Hand cannon",
+        "Hand cannons",
+        "Heavy Burst Hand cannon",
+        "Heavy Burst Hand cannons"
+      ]
+    },
+    {
+      "id": "boss-normalized-114",
+      "entity": "Hand cannon / Aggressive",
+      "field": "normalized damage per archetype unit",
+      "value": 108.7710787,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L114",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A114:X114"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Hand cannon",
+        "Hand cannons",
+        "Aggressive Hand cannon",
+        "Aggressive Hand cannons"
+      ]
+    },
+    {
+      "id": "boss-normalized-162",
+      "entity": "Machine gun / Adaptive",
+      "field": "normalized damage per archetype unit",
+      "value": 100.2024413,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L162",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A162:X162"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Machine gun",
+        "Machine guns",
+        "Adaptive Machine gun",
+        "Adaptive Machine guns"
+      ]
+    },
+    {
+      "id": "boss-normalized-163",
+      "entity": "Machine gun / Aggressive",
+      "field": "normalized damage per archetype unit",
+      "value": 80.86877522,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L163",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A163:X163"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Machine gun",
+        "Machine guns",
+        "Aggressive Machine gun",
+        "Aggressive Machine guns"
+      ]
+    },
+    {
+      "id": "boss-normalized-170",
+      "entity": "Machine gun / High-Impact",
+      "field": "normalized damage per archetype unit",
+      "value": 117.8729963,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L170",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A170:X170"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Machine gun",
+        "Machine guns",
+        "High-Impact Machine gun",
+        "High-Impact Machine guns"
+      ]
+    },
+    {
+      "id": "boss-normalized-171",
+      "entity": "Machine gun / Rapid-Fire",
+      "field": "normalized damage per archetype unit",
+      "value": 57.30803522,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L171",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A171:X171"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Machine gun",
+        "Machine guns",
+        "Rapid-Fire Machine gun",
+        "Rapid-Fire Machine guns"
+      ]
+    },
+    {
+      "id": "boss-normalized-175",
+      "entity": "Pulse rifle / Adaptive",
+      "field": "normalized damage per archetype unit",
+      "value": 38.77579586666666,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L175",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A175:X175"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 3,
+      "aliases": [
+        "Pulse rifle",
+        "Pulse rifles",
+        "Adaptive Pulse rifle",
+        "Adaptive Pulse rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-182",
+      "entity": "Pulse rifle / Heavy Burst",
+      "field": "normalized damage per archetype unit",
+      "value": 51.833628,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L182",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A182:X182"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 2,
+      "aliases": [
+        "Pulse rifle",
+        "Pulse rifles",
+        "Heavy Burst Pulse rifle",
+        "Heavy Burst Pulse rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-190",
+      "entity": "Pulse rifle / Rapid-Fire",
+      "field": "normalized damage per archetype unit",
+      "value": 29.56240164,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L190",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A190:X190"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 3,
+      "aliases": [
+        "Pulse rifle",
+        "Pulse rifles",
+        "Rapid-Fire Pulse rifle",
+        "Rapid-Fire Pulse rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-176",
+      "entity": "Pulse rifle / Aggressive Burst",
+      "field": "normalized damage per archetype unit",
+      "value": 32.1474547,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L176",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A176:X176"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 4,
+      "aliases": [
+        "Pulse rifle",
+        "Pulse rifles",
+        "Aggressive Burst Pulse rifle",
+        "Aggressive Burst Pulse rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-183",
+      "entity": "Pulse rifle / High-Impact",
+      "field": "normalized damage per archetype unit",
+      "value": 41.02943186666666,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L183",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A183:X183"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 3,
+      "aliases": [
+        "Pulse rifle",
+        "Pulse rifles",
+        "High-Impact Pulse rifle",
+        "High-Impact Pulse rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-184",
+      "entity": "Pulse rifle / Lightweight",
+      "field": "normalized damage per archetype unit",
+      "value": 31.948604463333336,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L184",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A184:X184"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 3,
+      "aliases": [
+        "Pulse rifle",
+        "Pulse rifles",
+        "Lightweight Pulse rifle",
+        "Lightweight Pulse rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-230",
+      "entity": "Scout rifle / Rapid-Fire",
+      "field": "normalized damage per archetype unit",
+      "value": 60.98073881,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L230",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A230:X230"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Scout rifle",
+        "Scout rifles",
+        "Rapid-Fire Scout rifle",
+        "Rapid-Fire Scout rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-224",
+      "entity": "Scout rifle / High-Impact",
+      "field": "normalized damage per archetype unit",
+      "value": 96.64121433,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L224",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A224:X224"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Scout rifle",
+        "Scout rifles",
+        "High-Impact Scout rifle",
+        "High-Impact Scout rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-225",
+      "entity": "Scout rifle / Lightweight",
+      "field": "normalized damage per archetype unit",
+      "value": 73.83972069,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L225",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A225:X225"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Scout rifle",
+        "Scout rifles",
+        "Lightweight Scout rifle",
+        "Lightweight Scout rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-221",
+      "entity": "Scout rifle / Aggressive",
+      "field": "normalized damage per archetype unit",
+      "value": 136.7426784,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L221",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A221:X221"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Scout rifle",
+        "Scout rifles",
+        "Aggressive Scout rifle",
+        "Aggressive Scout rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-229",
+      "entity": "Scout rifle / Precision",
+      "field": "normalized damage per archetype unit",
+      "value": 79.14239363,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "conflicted",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L229",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A229:X229"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "conflict_group": "precision-scout-baseline",
+      "aliases": [
+        "Scout rifle",
+        "Scout rifles",
+        "Precision Scout rifle",
+        "Precision Scout rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-248",
+      "entity": "Shotgun / Heavy Burst",
+      "field": "normalized damage per archetype unit",
+      "value": 484.536862,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0.2"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L248",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A248:X248"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 2,
+      "aliases": [
+        "Shotgun",
+        "Shotguns",
+        "Heavy Burst Shotgun",
+        "Heavy Burst Shotguns"
+      ]
+    },
+    {
+      "id": "boss-normalized-256",
+      "entity": "Shotgun / Rapid-Fire Slug",
+      "field": "normalized damage per archetype unit",
+      "value": 748.5822306,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0.2"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L256",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A256:X256"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Shotgun",
+        "Shotguns",
+        "Rapid-Fire Slug Shotgun",
+        "Rapid-Fire Slug Shotguns"
+      ]
+    },
+    {
+      "id": "boss-normalized-275",
+      "entity": "Sidearm / Micro-Missile",
+      "field": "normalized damage per archetype unit",
+      "value": 297.0132325,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0.2"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L275",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A275:X275"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Sidearm",
+        "Sidearms",
+        "Micro-Missile Sidearm",
+        "Micro-Missile Sidearms"
+      ]
+    },
+    {
+      "id": "boss-normalized-262",
+      "entity": "Sidearm / Adaptive",
+      "field": "normalized damage per archetype unit",
+      "value": 78.54584292,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L262",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A262:X262"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Sidearm",
+        "Sidearms",
+        "Adaptive Sidearm",
+        "Adaptive Sidearms"
+      ]
+    },
+    {
+      "id": "boss-normalized-261",
+      "entity": "Sidearm / Adaptive Burst",
+      "field": "normalized damage per archetype unit",
+      "value": 50.57424316666667,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L261",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A261:X261"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 3,
+      "aliases": [
+        "Sidearm",
+        "Sidearms",
+        "Adaptive Burst Sidearm",
+        "Adaptive Burst Sidearms"
+      ]
+    },
+    {
+      "id": "boss-normalized-277",
+      "entity": "Sidearm / Rapid-Fire",
+      "field": "normalized damage per archetype unit",
+      "value": 54.55124787,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L277",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A277:X277"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Sidearm",
+        "Sidearms",
+        "Rapid-Fire Sidearm",
+        "Rapid-Fire Sidearms"
+      ]
+    },
+    {
+      "id": "boss-normalized-273",
+      "entity": "Sidearm / Heavy Burst",
+      "field": "normalized damage per archetype unit",
+      "value": 67.60908,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L273",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A273:X273"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 2,
+      "aliases": [
+        "Sidearm",
+        "Sidearms",
+        "Heavy Burst Sidearm",
+        "Heavy Burst Sidearms"
+      ]
+    },
+    {
+      "id": "boss-normalized-274",
+      "entity": "Sidearm / Lightweight",
+      "field": "normalized damage per archetype unit",
+      "value": 67.60907999,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L274",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A274:X274"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Sidearm",
+        "Sidearms",
+        "Lightweight Sidearm",
+        "Lightweight Sidearms"
+      ]
+    },
+    {
+      "id": "boss-normalized-276",
+      "entity": "Sidearm / Precision",
+      "field": "normalized damage per archetype unit",
+      "value": 87.22896986,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L276",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A276:X276"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Sidearm",
+        "Sidearms",
+        "Precision Sidearm",
+        "Precision Sidearms"
+      ]
+    },
+    {
+      "id": "boss-normalized-293",
+      "entity": "SMG / Lightweight",
+      "field": "normalized damage per archetype unit",
+      "value": 28.50186705,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L293",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A293:X293"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "SMG",
+        "SMGs",
+        "Lightweight SMG",
+        "Lightweight SMGs"
+      ]
+    },
+    {
+      "id": "boss-normalized-281",
+      "entity": "SMG / Adaptive",
+      "field": "normalized damage per archetype unit",
+      "value": 27.04363199,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L281",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A281:X281"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "SMG",
+        "SMGs",
+        "Adaptive SMG",
+        "Adaptive SMGs"
+      ]
+    },
+    {
+      "id": "boss-normalized-286",
+      "entity": "SMG / Aggressive",
+      "field": "normalized damage per archetype unit",
+      "value": 33.8708234,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L286",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A286:X286"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "SMG",
+        "SMGs",
+        "Aggressive SMG",
+        "Aggressive SMGs"
+      ]
+    },
+    {
+      "id": "boss-normalized-284",
+      "entity": "SMG / Aggressive Burst",
+      "field": "normalized damage per archetype unit",
+      "value": 37.383844225,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L284",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A284:X284"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 4,
+      "aliases": [
+        "SMG",
+        "SMGs",
+        "Aggressive Burst SMG",
+        "Aggressive Burst SMGs"
+      ]
+    },
+    {
+      "id": "boss-normalized-297",
+      "entity": "SMG / Precision",
+      "field": "normalized damage per archetype unit",
+      "value": 37.91411152,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L297",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A297:X297"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "SMG",
+        "SMGs",
+        "Precision SMG",
+        "Precision SMGs"
+      ]
+    },
+    {
+      "id": "boss-normalized-317",
+      "entity": "Sniper rifle / High-Impact",
+      "field": "normalized damage per archetype unit",
+      "value": 1028.960302,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0.2"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L317",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A317:X317"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Sniper rifle",
+        "Sniper rifles",
+        "High-Impact Sniper rifle",
+        "High-Impact Sniper rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-309",
+      "entity": "Sniper rifle / Adaptive",
+      "field": "normalized damage per archetype unit",
+      "value": 658.4499055,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0.2"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L309",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A309:X309"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Sniper rifle",
+        "Sniper rifles",
+        "Adaptive Sniper rifle",
+        "Adaptive Sniper rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-310",
+      "entity": "Sniper rifle / Aggressive",
+      "field": "normalized damage per archetype unit",
+      "value": 832.362949,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0.2"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L310",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A310:X310"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Sniper rifle",
+        "Sniper rifles",
+        "Aggressive Sniper rifle",
+        "Aggressive Sniper rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-323",
+      "entity": "Sniper rifle / Rapid-Fire",
+      "field": "normalized damage per archetype unit",
+      "value": 449.4517958,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0.2"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L323",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A323:X323"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Sniper rifle",
+        "Sniper rifles",
+        "Rapid-Fire Sniper rifle",
+        "Rapid-Fire Sniper rifles"
+      ]
+    },
+    {
+      "id": "boss-normalized-404",
+      "entity": "Trace rifle / Adaptive",
+      "field": "normalized damage per archetype unit",
+      "value": 28.63443388,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "community_measurement",
+      "applies_to": [
+        "9.7.0"
+      ],
+      "conditions": [
+        "boss-normalized target and component assumptions verified"
+      ],
+      "provenance": {
+        "source_id": "boss",
+        "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+        "locator": "Weapons!L404",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+        "watch": [
+          {
+            "sheet": "Weapons",
+            "range": "A404:X404"
+          },
+          {
+            "sheet": "Weapons",
+            "range": "A1:X2"
+          }
+        ]
+      },
+      "independence_group": "aegis",
+      "source_burst_divisor": 1,
+      "aliases": [
+        "Trace rifle",
+        "Trace rifles",
+        "Adaptive Trace rifle",
+        "Adaptive Trace rifles"
+      ]
+    },
+    {
+      "id": "endgame-precision-scout",
+      "entity": "Scout rifle / Precision",
+      "field": "normalized base damage",
+      "value": 75.298,
+      "unit": "aegis_normalized_damage",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "conflicted",
+      "applies_to": [],
+      "conditions": [],
+      "provenance": {
+        "source_id": "aegis-endgame",
+        "url": "https://docs.google.com/spreadsheets/d/1JM-0SlxVDAi-C6rGVlLxa-J1WGewEeL8Qvq4htWZHhY/edit?gid=1062099834#gid=1062099834",
+        "locator": "Archetypes!H62",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "c71a2dc392225e8e88695d9ce892e82ca8ddc087d45250039e806769794a874d",
+        "watch": [
+          {
+            "sheet": "Archetypes",
+            "range": "A62:AP62"
+          },
+          {
+            "sheet": "Archetypes",
+            "range": "A1:AP2"
+          }
+        ]
+      },
+      "conflict_group": "precision-scout-baseline",
+      "notes": "Boss/Endgame - 1 = 5.1056%; effective patch of Endgame observation not established, so it is not resolvable for an arbitrary sandbox.",
+      "independence_group": "aegis",
+      "aliases": [
+        "Scout rifle",
+        "Scout rifles",
+        "Precision Scout rifle",
+        "Precision Scout rifles"
+      ]
+    },
+    {
+      "id": "rewind-lockout-aegis",
+      "entity": "Rewind Rounds",
+      "field": "post-refill hit-count lockout",
+      "value": 1,
+      "unit": "seconds",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "conflicted",
+      "applies_to": [],
+      "conditions": [],
+      "provenance": {
+        "source_id": "aegis-endgame",
+        "url": "https://docs.google.com/spreadsheets/d/1JM-0SlxVDAi-C6rGVlLxa-J1WGewEeL8Qvq4htWZHhY/edit?gid=1062099834#gid=1062099834",
+        "locator": "Perks!F71",
+        "retrieved_at": "2026-11-01",
+        "snapshot_sha256": "c71a2dc392225e8e88695d9ce892e82ca8ddc087d45250039e806769794a874d",
+        "watch": [
+          {
+            "sheet": "Perks",
+            "range": "B71:K71"
+          }
+        ]
+      },
+      "conflict_group": "rewind-lockout",
+      "notes": "Aegis summary is definite; DDC writes 1? seconds. Patch applicability not established."
+    },
+    {
+      "id": "rewind-lockout-ddc",
+      "entity": "Rewind Rounds",
+      "field": "post-refill hit-count lockout",
+      "value": null,
+      "unit": "seconds",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "unknown",
+      "applies_to": [],
+      "conditions": [],
+      "provenance": {
+        "source_id": "compendium",
+        "url": "https://docs.google.com/spreadsheets/d/1WaxvbLx7UoSZaBqdFr1u32F2uWVLo-CJunJB4nlGUE4/edit?gid=1662574278",
+        "locator": "Weapon Perks!C188:F188",
+        "retrieved_at": "2026-10-27"
+      },
+      "conflict_group": "rewind-lockout",
+      "notes": "Source uses 1? seconds; unknown precision is preserved instead of replacing it with 1."
+    },
+    {
+      "id": "generator-radiant",
+      "entity": "Radiant",
+      "field": "stored historical multiplier",
+      "value": 1.25,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "historical_stale",
+      "applies_to": [
+        "legacy-generator-v3.1"
+      ],
+      "conditions": [],
+      "provenance": {
+        "source_id": "generator",
+        "url": "https://docs.google.com/spreadsheets/d/1rY_iChu08CVnIMfHliZQwup10-GnmPtEu5FG0DNy8VM/edit",
+        "locator": "BuffsDebuffs!F15",
+        "retrieved_at": "2026-10-27"
+      },
+      "notes": "Not compatible with current Court values by relabeling the sandbox."
+    },
+    {
+      "id": "generator-banner",
+      "entity": "Banner Shield",
+      "field": "stored historical multiplier",
+      "value": 1.4,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "historical_stale",
+      "applies_to": [
+        "legacy-generator-v3.1"
+      ],
+      "conditions": [],
+      "provenance": {
+        "source_id": "generator",
+        "url": "https://docs.google.com/spreadsheets/d/1rY_iChu08CVnIMfHliZQwup10-GnmPtEu5FG0DNy8VM/edit",
+        "locator": "BuffsDebuffs!F13",
+        "retrieved_at": "2026-10-27"
+      },
+      "notes": "Not compatible with current Court values by relabeling the sandbox."
+    },
+    {
+      "id": "generator-tether",
+      "entity": "Generic Tether",
+      "field": "stored historical multiplier",
+      "value": 1.3,
+      "unit": "factor",
+      "mode": "PvE",
+      "components": [
+        "weapon_combined"
+      ],
+      "status": "historical_stale",
+      "applies_to": [
+        "legacy-generator-v3.1"
+      ],
+      "conditions": [],
+      "provenance": {
+        "source_id": "generator",
+        "url": "https://docs.google.com/spreadsheets/d/1rY_iChu08CVnIMfHliZQwup10-GnmPtEu5FG0DNy8VM/edit",
+        "locator": "BuffsDebuffs!F4",
+        "retrieved_at": "2026-10-27"
+      },
+      "notes": "Not compatible with current Court values by relabeling the sandbox."
+    }
+  ]
+}

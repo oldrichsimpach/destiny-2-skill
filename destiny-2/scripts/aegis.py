@@ -13,7 +13,11 @@ SNAPSHOT = ROOT / 'assets' / 'private' / 'aegis-endgame-analysis.xlsx'
 
 
 def scalar(value):
-    return value.isoformat() if isinstance(value, (datetime.datetime, datetime.date)) else value
+    if isinstance(value, (datetime.datetime, datetime.date)):
+        return value.isoformat()
+    if type(value).__name__ in ('ArrayFormula','DataTableFormula') and type(value).__module__.startswith('openpyxl.'):
+        return {'formula_type':type(value).__name__,**vars(value)}
+    return value
 
 
 def book(path, cached=True):
@@ -58,7 +62,7 @@ def row_data(w, wf, name, r):
         s.cell(r, c).column_letter: dict(header=scalar(s.cell(header_row, c).value),
             header_comment=f.cell(header_row, c).comment.text if f.cell(header_row, c).comment else None,
             value=scalar(s.cell(r, c).value),
-            formula=f.cell(r, c).value if f.cell(r, c).data_type == 'f' else None,
+            formula=scalar(f.cell(r, c).value) if f.cell(r, c).data_type == 'f' else None,
             comment=f.cell(r, c).comment.text if f.cell(r, c).comment else None)
         for c in range(1, s.max_column + 1)
         if s.cell(r, c).value is not None or f.cell(r, c).value is not None}}

@@ -1,0 +1,94 @@
+{
+  "sandbox": "synthetic-v1",
+  "mode": "PvE",
+  "target": {
+    "id": "synthetic target"
+  },
+  "damage_unit": "synthetic_damage",
+  "baseline_kind": "synthetic",
+  "provenance": "Synthetic charge-conservation example; not a measured game build",
+  "duration": 12,
+  "windows_seconds": [
+    5,
+    7,
+    12
+  ],
+  "builds": [
+    {
+      "name": "Declared ability loop",
+      "initial_weapon": "primary",
+      "weapons": [
+        {
+          "id": "primary",
+          "ammo": 4,
+          "magazine": 4,
+          "recovery_seconds": 1,
+          "components": [
+            {
+              "id": "hit",
+              "kind": "weapon_combined",
+              "body": 10,
+              "counts_for_triggers": true,
+              "hit_probability": 0.8
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "id": "grenade",
+          "cooldown_seconds": 10,
+          "cast_seconds": 1,
+          "initial_energy": 1,
+          "components": [
+            {
+              "id": "explosion",
+              "kind": "ability",
+              "body": 150
+            }
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "id": "two hits energy",
+          "kind": "instant",
+          "trigger": {
+            "on": "hit",
+            "source_ids": [
+              "primary"
+            ],
+            "count": 2,
+            "within_seconds": 3
+          },
+          "energy_grants": [
+            {
+              "ability": "grenade",
+              "amount": 0.4,
+              "chunk_scalar": 0.5,
+              "class_mod_scalar": 1
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "cast",
+          "ability": "grenade"
+        },
+        {
+          "type": "fire",
+          "weapon": "primary",
+          "count": 4
+        },
+        {
+          "type": "cast",
+          "ability": "grenade",
+          "auto_wait": true
+        }
+      ]
+    }
+  ],
+  "stochastic_trials": 200,
+  "seed": 17
+}

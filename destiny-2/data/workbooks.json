@@ -1,0 +1,86 @@
+{
+  "sources": {
+    "boss": {
+      "url": "https://docs.google.com/spreadsheets/d/1_5wtBjRYHHxuF4oJKDb_iOGZs-wTkzB6RYbnyNLbuz4/edit",
+      "author": "Aegis / @theaegisrelic",
+      "retrieved_at": "2026-11-01",
+      "local_path": "assets/private/boss-damage.xlsx",
+      "sha256": "e6ccd90c3cb3e2109805286b20591e61831566b6ac64cc4ccac2c3b483827748",
+      "header_rows": {
+        "Weapons": 2,
+        "Abilties": 2,
+        "Bosses": 2,
+        "Fireteam (S29)": 2
+      },
+      "label_columns": {
+        "Weapons": [
+          2,
+          3
+        ],
+        "Abilties": [
+          2,
+          3
+        ],
+        "Bosses": [
+          2,
+          3
+        ],
+        "Sustained": [
+          1
+        ],
+        "Swap": [
+          1
+        ],
+        "Fireteam (S29)": [
+          2,
+          3
+        ]
+      },
+      "required_sheets": [
+        "Weapons",
+        "Bosses",
+        "Sustained",
+        "Swap"
+      ],
+      "identity_cells": [
+        {
+          "sheet": "Weapons",
+          "cell": "U2",
+          "value": "Patch"
+        }
+      ]
+    },
+    "reserves": {
+      "url": "https://docs.google.com/spreadsheets/d/1l3xBHFa6ZMe86e13segg8f-RB8vLNerYEgNC_Aq3kLc/edit",
+      "author": "MossyMax",
+      "retrieved_at": "2026-11-01",
+      "local_path": "assets/private/reserves.xlsx",
+      "sha256": "855a0f30f6718e31283a9f21956c3b77b757c3bc98a3f404bd47377ac1f4781b",
+      "header_rows": {
+        "EoF Full Database": 2,
+        "EOF Primaries": 2
+      },
+      "label_columns": {
+        "EoF Full Database": [
+          1,
+          2
+        ],
+        "EOF Primaries": [
+          1,
+          2
+        ]
+      },
+      "required_sheets": [
+        "EoF Full Database",
+        "Ammo Brick math"
+      ],
+      "identity_cells": [
+        {
+          "sheet": "EoF Full Database",
+          "cell": "C2",
+          "value": "Base Total Ammo"
+        }
+      ]
+    }
+  }
+}

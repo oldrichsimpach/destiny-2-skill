@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "skill_version": "0.3-beta.1",
-  "audited_at": "2026-10-27",
+  "skill_version": "0.4-beta.1",
+  "audited_at": "2026-11-01",
   "labels": {
     "verified_for_scope": "ověřeno v uvedeném rozsahu",
     "partially_verified": "částečně ověřeno",
@@ -39,9 +39,9 @@
       "status": "partially_verified",
       "access": "viewer; owner security limitations; no export",
       "calculation_test": "rules read, not game-tested",
-      "freshness": "Author checked 9.7.0.3; data change 2026-06-09",
+      "freshness": "2026-11-01 viewer still declares checked 9.7.0.3; selected Radiant/Well/Banner/Deadfall values reread",
       "checked_scope": "Rows 99:132,158:174,202:214; standard buff/debuff/surge precedence",
-      "audited_at": "2026-10-27"
+      "audited_at": "2026-11-01"
     },
     {
       "id": "generator",
@@ -49,10 +49,10 @@
       "url": "https://docs.google.com/spreadsheets/d/1rY_iChu08CVnIMfHliZQwup10-GnmPtEu5FG0DNy8VM/edit",
       "status": "historical_stale",
       "access": "copy/download allowed; private copy tested",
-      "calculation_test": "PASS phase 20->45, buff factor 1.625, reset baseline",
-      "freshness": "v3.1 2024-11-09; author warns EoF retest pending; measured stale Radiant/Banner/Deadfall inputs",
+      "calculation_test": "Historical 2026-10-27 phase/buff/reset test; not rerun during v0.4",
+      "freshness": "Fresh 2026-11-01 export still v3.1 / changelog 2024-11-09; selected stale coefficients confirmed",
       "checked_scope": "One adaptive Fusion row, stock modifier selection; no full weapon/catalyst coverage or custom script execution",
-      "audited_at": "2026-10-27"
+      "audited_at": "2026-11-01"
     },
     {
       "id": "armor",
@@ -72,31 +72,31 @@
       "status": "partially_verified",
       "access": "public viewer; author permits copying",
       "calculation_test": "not operated",
-      "freshness": "Changelog latest visible 2026-10-12; older tabs explicitly labeled",
-      "checked_scope": "Home and Changelog; numerical rotations not revalidated",
-      "audited_at": "2026-10-27"
+      "freshness": "Changelog includes 2026-10-31 S29 rotation completion; underlying rows have mixed measurement patches",
+      "checked_scope": "24-sheet snapshot; exact row reader and structured array formulas; 47 compatible baseline comparisons; rotations not independently revalidated",
+      "audited_at": "2026-11-01"
     },
     {
       "id": "endgame",
       "name": "Aegis Endgame Analysis",
       "url": "https://docs.google.com/spreadsheets/d/1JM-0SlxVDAi-C6rGVlLxa-J1WGewEeL8Qvq4htWZHhY/edit",
       "status": "partially_verified",
-      "access": "public web view",
-      "calculation_test": "not a numeric test",
+      "access": "permitted immutable XLSX snapshot and source-linked index",
+      "calculation_test": "174 standard cache arithmetic relationships; not full recalculation",
       "freshness": "Mixed per-tab dates: Scouts 2026-10-12; Exotic Armor/Builds pre-TFS future",
-      "checked_scope": "Status tab only; ratings are not DPS measurements",
-      "audited_at": "2026-10-27"
+      "checked_scope": "All 52 sheets structurally scanned; schemas/comments/methodology; 47 scoped cross-checks against Boss Damage",
+      "audited_at": "2026-11-01"
     },
     {
       "id": "reserves",
       "name": "Mossy reserves",
       "url": "https://docs.google.com/spreadsheets/d/1l3xBHFa6ZMe86e13segg8f-RB8vLNerYEgNC_Aq3kLc/edit",
-      "status": "unprocessed",
-      "access": "public comment-only viewer",
+      "status": "partially_verified",
+      "access": "permitted XLSX snapshot",
       "calculation_test": "not operated",
       "freshness": "EoF label; current per-weapon reserve numbers not audited",
-      "checked_scope": "28 visible tabs; old/pre-TFS backups separated",
-      "audited_at": "2026-10-27"
+      "checked_scope": "28-sheet inventory, metadata/methodology and EoF database example; no complete current-patch reserve certification",
+      "audited_at": "2026-11-01"
     },
     {
       "id": "scaling",
@@ -174,6 +174,17 @@
       "freshness": "9.7.0, .1, .2, .5, .6 read; .3/.4 notes not retrieved",
       "checked_scope": "Selected relative changes; no blanket latest-patch certification",
       "audited_at": "2026-10-27"
+    },
+    {
+      "id": "quantum",
+      "name": "Quantum Damage-ics",
+      "url": "https://docs.google.com/spreadsheets/d/1x12Ar1-kHH2AzHY8Clkv-PIMxxDSZrIX3e4xiJuQ-uI/edit",
+      "status": "partially_verified",
+      "access": "permitted XLSX snapshot retained in local research folder, not installed as an adapter",
+      "calculation_test": "not numerically cross-compared",
+      "freshness": "Home transition 8.2.6 -> 9.7.0.1; last populated History date 2026-08-29",
+      "checked_scope": "Methodology, frame timing, reload/crit assumptions and struck-out old testing target",
+      "audited_at": "2026-11-01"
     }
   ],
   "aegis_integration": {
@@ -181,5 +192,17 @@
     "audit": "aegis-source.json",
     "status": "structurally audited; patch-specific verification still required",
     "sheet_count": 52
-  }
+  },
+  "v04_engine_scope": {
+    "audited_at": "2026-11-01",
+    "claims": 82,
+    "workbook_sources": [
+      "boss",
+      "reserves"
+    ],
+    "legal_checks": "exact hash/socket/class/slot/unique-label plus caller-supplied audited rule packs; server constraints remain unknown",
+    "simulation": "declared bounded event/state model with synthetic reference cases; no full-game calibration",
+    "source_updates": "local fingerprints, dependency invalidation and conservative official-patch mention review; no automatic coefficient adoption"
+  },
+  "contains_mixed_audit_dates": true
 }

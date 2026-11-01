@@ -1,3 +1,5 @@
+For the v0.4 evidence/state engines, read [simulation.md](simulation.md) and [evidence-and-legality.md](evidence-and-legality.md). The helpers below retain their v0.2 contracts and datasets; in particular, compare.py reload_gap is not simulate.py reload_seconds.
+
 # Curated lookup and bounded calculations
 
 Python 3 standard library suffices for `knowledge.py` and `compare.py`; only XLSX inspection needs openpyxl. Paths below are relative to this skill directory.

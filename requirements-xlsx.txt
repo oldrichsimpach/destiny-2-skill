@@ -1,0 +1,2 @@
+# Optional: XLSX readers/fingerprints. Numerical engines use the standard library.
+openpyxl>=3.1,<4

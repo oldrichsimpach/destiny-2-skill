@@ -1,0 +1,27 @@
+{
+  "class_type": 1,
+  "sandbox": "requested sandbox must be verified separately",
+  "manifest_version": "245114.26.10.13.2000-1-bnet.66137",
+  "purpose": "theoretical_roll",
+  "required_buckets": [
+    953998645
+  ],
+  "items": [
+    {
+      "item_hash": "2265407516",
+      "plugs": [
+        {
+          "socket": 3,
+          "plug_hash": "1275731761",
+          "path": "random_roll"
+        },
+        {
+          "socket": 4,
+          "plug_hash": "1089671869",
+          "path": "random_roll"
+        }
+      ]
+    }
+  ],
+  "provenance": "Exact hash/socket example from dated 2026-10-24 manifest snapshot; not a complete build"
+}
