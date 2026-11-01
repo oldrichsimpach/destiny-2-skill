@@ -1,3 +1,7 @@
+## Primary endgame community source
+
+Start with [Aegis Endgame Analysis](aegis.md) for covered endgame PvE research. Its priority, exclusions, source lineage and dated per-sheet audit are documented there. Official changes, roll legality and specialist stacking evidence retain authority for their respective claims.
+
 # Sources, identity and historical evidence
 
 ## Source map

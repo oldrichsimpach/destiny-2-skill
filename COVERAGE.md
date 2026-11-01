@@ -1,3 +1,9 @@
+# Coverage 0.3-beta.1
+
+Aegis: audit všech 52 listů, 2495 položek indexu; hlavní komunitní zdroj v pokrytých endgame PvE oblastech. Podrobnosti: [audit](destiny-2/references/aegis-audit.md), [pravidla a omezení](destiny-2/references/aegis.md). Status autora není potvrzení aktuálního sandboxu. Původní číselné záznamy v0.2 nebyly přepsány.
+
+## Zachovaný audit v0.2 (2026-10-27)
+
 # Pokrytí v0.2 — experimentální
 
 Audit dokončen 2026-10-27. Ověření je omezené na uvedený rozsah; nejde o potvrzení aktuálnosti celé databáze nebo hry.
@@ -19,3 +25,4 @@ Audit dokončen 2026-10-27. Ověření je omezené na uvedený rozsah; nejde o p
 | [Prismatic Build Planner](https://docs.google.com/spreadsheets/d/1zKOc0WErE0jfoMwtxraPTqXEWfiOHkQP3popHPbIrw0/template/preview) | nedostupné | Do not bypass or invent replacement | unverifiable / not possible |
 | [Clarity](https://github.com/Database-Clarity/Live-Clarity-Database) | částečně ověřeno | Route only; credit Clarity and Discord feedback link required for future integration | Live database is versioned; update policy must be honored / no mirror or tooltip integration |
 | [Bungie patch audit](https://www.bungie.net/7/en/News/Article/destiny_2_update_9_7_0_6) | částečně ověřeno | Selected relative changes; no blanket latest-patch certification | 9.7.0, .1, .2, .5, .6 read; .3/.4 notes not retrieved / not applicable |
+

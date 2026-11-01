@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "skill_version": "0.2",
+  "skill_version": "0.3-beta.1",
   "audited_at": "2026-10-27",
   "labels": {
     "verified_for_scope": "ověřeno v uvedeném rozsahu",
@@ -175,5 +175,11 @@
       "checked_scope": "Selected relative changes; no blanket latest-patch certification",
       "audited_at": "2026-10-27"
     }
-  ]
+  ],
+  "aegis_integration": {
+    "source_id": "aegis-endgame",
+    "audit": "aegis-source.json",
+    "status": "structurally audited; patch-specific verification still required",
+    "sheet_count": 52
+  }
 }

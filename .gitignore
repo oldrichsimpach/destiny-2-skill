@@ -1,10 +1,10 @@
+work/
+*.xlsx
 *.sqlite
-*.sqlite-*
 *.partial
+*.zip
 __pycache__/
 *.pyc
 .env
-
-work/
-*.zip
 node_modules/
+destiny-2/assets/private/

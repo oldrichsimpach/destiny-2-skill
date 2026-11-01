@@ -1,8 +1,15 @@
 {
   "schema_version": 1,
-  "skill_version": "0.2",
+  "skill_version": "0.3-beta.1",
   "audited_at": "2026-10-27",
   "records": [
+    {
+      "id": "aegis-endgame",
+      "author": "Aegis / @theaegisrelic",
+      "url": "https://docs.google.com/spreadsheets/d/1JM-0SlxVDAi-C6rGVlLxa-J1WGewEeL8Qvq4htWZHhY/edit?gid=1062099834#gid=1062099834",
+      "scope": "Primary community source within covered endgame PvE topics; verify patch applicability.",
+      "accessed_at": "2026-11-01"
+    },
     {
       "id": "court",
       "author": "Court",

@@ -1,0 +1,499 @@
+{
+  "id": "aegis-endgame",
+  "title": "Destiny 2: Endgame Analysis",
+  "author": "Aegis / @theaegisrelic",
+  "url": "https://docs.google.com/spreadsheets/d/1JM-0SlxVDAi-C6rGVlLxa-J1WGewEeL8Qvq4htWZHhY/edit?gid=1062099834#gid=1062099834",
+  "retrieved_at": "2026-11-01",
+  "sha256": "c71a2dc392225e8e88695d9ce892e82ca8ddc087d45250039e806769794a874d",
+  "priority": "Primary community source within covered endgame PvE topics; verify patch applicability.",
+  "redistribution": "Public package contains original integration, metadata and a name/locator index. No license to mirror full workbook established. Local user snapshot only.",
+  "sheets": [
+    {
+      "sheet": "Reference (outdated)",
+      "visibility": "hidden",
+      "rows": 67,
+      "columns": 9,
+      "classification": "historical",
+      "eligible": false
+    },
+    {
+      "sheet": "Shotguns (old)",
+      "visibility": "hidden",
+      "rows": 44,
+      "columns": 15,
+      "classification": "historical",
+      "eligible": false
+    },
+    {
+      "sheet": "Snipers (old)",
+      "visibility": "hidden",
+      "rows": 41,
+      "columns": 14,
+      "classification": "historical",
+      "eligible": false
+    },
+    {
+      "sheet": "Fusions (old)",
+      "visibility": "hidden",
+      "rows": 31,
+      "columns": 15,
+      "classification": "historical",
+      "eligible": false
+    },
+    {
+      "sheet": "GLs (breech) (old)",
+      "visibility": "hidden",
+      "rows": 17,
+      "columns": 15,
+      "classification": "historical",
+      "eligible": false
+    },
+    {
+      "sheet": "Status",
+      "visibility": "visible",
+      "rows": 41,
+      "columns": 4,
+      "classification": "metadata",
+      "eligible": false
+    },
+    {
+      "sheet": "Changelog",
+      "visibility": "visible",
+      "rows": 1562,
+      "columns": 5,
+      "classification": "editorial_history",
+      "eligible": false
+    },
+    {
+      "sheet": "Shopping List",
+      "visibility": "visible",
+      "rows": 68,
+      "columns": 9,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-08-19T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Archetypes (old)",
+      "visibility": "hidden",
+      "rows": 81,
+      "columns": 21,
+      "classification": "historical",
+      "eligible": false
+    },
+    {
+      "sheet": "Archetypes",
+      "visibility": "visible",
+      "rows": 96,
+      "columns": 42,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-20T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Ideas",
+      "visibility": "hidden",
+      "rows": 33,
+      "columns": 11,
+      "classification": "historical",
+      "eligible": false
+    },
+    {
+      "sheet": "Experimental",
+      "visibility": "visible",
+      "rows": 99,
+      "columns": 21,
+      "classification": "hypothetical",
+      "eligible": false,
+      "author_updated": "2024-09-09T00:00:00",
+      "author_status": "future"
+    },
+    {
+      "sheet": "Autos",
+      "visibility": "visible",
+      "rows": 64,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-21T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Bows",
+      "visibility": "visible",
+      "rows": 30,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-12T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "HCs",
+      "visibility": "visible",
+      "rows": 70,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-12T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Pulses",
+      "visibility": "visible",
+      "rows": 61,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-12T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Scouts",
+      "visibility": "visible",
+      "rows": 50,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-10-12T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Sidearms",
+      "visibility": "visible",
+      "rows": 40,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-12T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "SMGs",
+      "visibility": "visible",
+      "rows": 55,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-12T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "BGLs",
+      "visibility": "visible",
+      "rows": 36,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-10T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Fusions",
+      "visibility": "visible",
+      "rows": 45,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-10T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Glaives",
+      "visibility": "visible",
+      "rows": 16,
+      "columns": 19,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-12T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Shotguns",
+      "visibility": "visible",
+      "rows": 62,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-13T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Snipers",
+      "visibility": "visible",
+      "rows": 59,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-08-30T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Rocket Sidearms",
+      "visibility": "visible",
+      "rows": 10,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-13T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Traces",
+      "visibility": "visible",
+      "rows": 14,
+      "columns": 17,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-13T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Glaives (old)",
+      "visibility": "hidden",
+      "rows": 9,
+      "columns": 11,
+      "classification": "historical",
+      "eligible": false
+    },
+    {
+      "sheet": "LMGs (old)",
+      "visibility": "hidden",
+      "rows": 23,
+      "columns": 10,
+      "classification": "historical",
+      "eligible": false
+    },
+    {
+      "sheet": "GLs (drum) (old)",
+      "visibility": "hidden",
+      "rows": 20,
+      "columns": 9,
+      "classification": "historical",
+      "eligible": false
+    },
+    {
+      "sheet": "Swords (old)",
+      "visibility": "hidden",
+      "rows": 27,
+      "columns": 10,
+      "classification": "historical",
+      "eligible": false
+    },
+    {
+      "sheet": "HGLs",
+      "visibility": "visible",
+      "rows": 28,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-13T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "LFRs",
+      "visibility": "visible",
+      "rows": 21,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-13T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "LMGs",
+      "visibility": "visible",
+      "rows": 38,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-13T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Rockets",
+      "visibility": "visible",
+      "rows": 36,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-13T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Swords",
+      "visibility": "visible",
+      "rows": 43,
+      "columns": 19,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-08-23T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Other",
+      "visibility": "visible",
+      "rows": 10,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-07-15T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Primaries",
+      "visibility": "hidden",
+      "rows": 20,
+      "columns": 12,
+      "classification": "historical",
+      "eligible": false
+    },
+    {
+      "sheet": "Exotic Weapons",
+      "visibility": "visible",
+      "rows": 143,
+      "columns": 17,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-08-08T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Exotic Armor (old)",
+      "visibility": "hidden",
+      "rows": 43,
+      "columns": 15,
+      "classification": "historical",
+      "eligible": false
+    },
+    {
+      "sheet": "Exotic Armor (ignore)",
+      "visibility": "visible",
+      "rows": 124,
+      "columns": 11,
+      "classification": "excluded_by_author",
+      "eligible": false,
+      "author_updated": "pre-TFS",
+      "author_status": "future"
+    },
+    {
+      "sheet": "Builds (ignore)",
+      "visibility": "visible",
+      "rows": 120,
+      "columns": 14,
+      "classification": "excluded_by_author",
+      "eligible": false,
+      "author_updated": "pre-TFS",
+      "author_status": "future"
+    },
+    {
+      "sheet": "Perks",
+      "visibility": "visible",
+      "rows": 230,
+      "columns": 13,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-08-27T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Origin Traits",
+      "visibility": "visible",
+      "rows": 84,
+      "columns": 12,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-08-30T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Set Bonuses",
+      "visibility": "visible",
+      "rows": 114,
+      "columns": 12,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-08-30T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Artifact Mods",
+      "visibility": "visible",
+      "rows": 149,
+      "columns": 9,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-06-23T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Fragments",
+      "visibility": "visible",
+      "rows": 101,
+      "columns": 12,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-09-02T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Aspects",
+      "visibility": "visible",
+      "rows": 62,
+      "columns": 12,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-09-07T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Subclasses (old 2)",
+      "visibility": "hidden",
+      "rows": 20,
+      "columns": 48,
+      "classification": "historical",
+      "eligible": false
+    },
+    {
+      "sheet": "Subclasses (Old)",
+      "visibility": "hidden",
+      "rows": 19,
+      "columns": 13,
+      "classification": "historical",
+      "eligible": false
+    },
+    {
+      "sheet": "Subclasses",
+      "visibility": "visible",
+      "rows": 20,
+      "columns": 18,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-09-07T00:00:00",
+      "author_status": "updated"
+    },
+    {
+      "sheet": "Encounters",
+      "visibility": "visible",
+      "rows": 56,
+      "columns": 16,
+      "classification": "candidate",
+      "eligible": true,
+      "author_updated": "2026-01-12T00:00:00",
+      "author_status": "in progress"
+    },
+    {
+      "sheet": "Changelog (old)",
+      "visibility": "hidden",
+      "rows": 29,
+      "columns": 2,
+      "classification": "historical",
+      "eligible": false
+    }
+  ],
+  "formula_count": 3867,
+  "comment_count": 107,
+  "cached_error_count": 0
+}
